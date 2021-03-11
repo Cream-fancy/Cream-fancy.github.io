@@ -1,0 +1,40 @@
+{"mc":{
+	"loop":{
+		"frameRate":3,
+		"labels":[
+			{"name":"loop","frame":1,"end":4}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"loop1_png",
+			"x":0,
+			"y":1
+			},
+			{
+			"res":"loop2_png",
+			"x":1,
+			"y":0
+			},
+			{
+			"res":"loop3_png",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"loop4_png",
+			"x":0,
+			"y":1
+			}
+			]
+}},
+	"res":{
+		"loop2_png":{"x":182,"y":0,"w":173,"h":374},
+		"loop4_png":{"x":182,"y":379,"w":173,"h":376},
+		"loop1_png":{"x":0,"y":379,"w":181,"h":372},
+		"loop3_png":{"x":0,"y":0,"w":182,"h":378}
+	}}

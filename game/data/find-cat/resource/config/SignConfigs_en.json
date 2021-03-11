@@ -1,0 +1,104 @@
+[
+    {
+        "days":"Day 1",
+        "gold":[
+            {
+                "type":1,
+                "goldNum":50,
+                "name":"Gold",
+                "imgUrl":"jinb-icon_png"
+            }
+        ]
+        
+    },
+    {
+        "days":"Day 2",
+        "gold":[
+            {
+                "type":2,
+                "goldNum":5,
+                "name":"Power",
+                "imgUrl":"til-icon_png"
+            }
+        ]
+    },
+    {
+        "days":"Day 3",
+        "gold":[
+            {
+                "type":2,
+                "goldNum":5,
+                "name":"Power",
+                "imgUrl":"til-icon_png"
+            },
+            {
+                "type":1,
+                "goldNum":50,
+                "name":"Gold",
+                "imgUrl":"jinb-icon_png"
+            }
+        ]
+    },
+    {
+        "days":"Day 4",
+        "gold":[
+            {
+                "type":1,
+                "goldNum":50,
+                "name":"Gold",
+                "imgUrl":"jinb-icon_png"
+            }
+        ]
+    },
+    {
+        "days":"Day 5",
+        "gold":[
+            {
+                "type":2,
+                "goldNum":5,
+                "name":"Power",
+                "imgUrl":"til-icon_png"
+            },
+            {
+                "type":1,
+                "goldNum":50,
+                "name":"Gold",
+                "imgUrl":"jinb-icon_png"
+            }
+        ]
+    },
+    {
+        "days":"Day 6",
+        "gold":[
+            {
+                "type":2,
+                "goldNum":5,
+                "name":"Power",
+                "imgUrl":"til-icon_png"
+            },
+            {
+                "type":1,
+                "goldNum":50,
+                "name":"Gold",
+                "imgUrl":"jinb-icon_png"
+            }
+        ]
+    },
+    {
+        "days":"Day 7",
+        "gold":[
+            {
+                "type":1,
+                "goldNum":100,
+                "name":"Gold",
+                "imgUrl":"jinb-icon_png"
+            },
+            {
+                "type":2,
+                "goldNum":10,
+                "name":"Power",
+                "imgUrl":"til-icon_png"
+            }
+        ]
+    }
+]

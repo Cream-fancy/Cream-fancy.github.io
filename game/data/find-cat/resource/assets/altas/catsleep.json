@@ -1,0 +1,28 @@
+{"mc":{
+	"catsleep":{
+		"frameRate":1,
+		"labels":[
+			{"name":"catsleep","frame":1,"end":2}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"catsleep1_png",
+			"x":3,
+			"y":13
+			},
+			{
+			"res":"catsleep2_png",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"catsleep1_png":{"x":0,"y":61,"w":75,"h":48},
+		"catsleep2_png":{"x":0,"y":0,"w":77,"h":61}
+	}}

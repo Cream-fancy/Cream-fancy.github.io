@@ -1,0 +1,28 @@
+{"mc":{
+	"catLoad":{
+		"frameRate":6,
+		"labels":[
+			{"name":"catLoa","frame":1,"end":2}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"catLoad1_png",
+			"x":1,
+			"y":1
+			},
+			{
+			"res":"catLoad2_png",
+			"x":1,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"catLoad1_png":{"x":0,"y":0,"w":62,"h":38},
+		"catLoad2_png":{"x":62,"y":0,"w":66,"h":35}
+	}}

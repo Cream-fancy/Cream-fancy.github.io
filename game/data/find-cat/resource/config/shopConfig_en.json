@@ -1,0 +1,17 @@
+[
+
+    {
+        "id":1,
+        "name":"power",
+        "num":1,
+        "gold":25,
+        "imgUrl":"til-icon_png"
+    },
+    {
+        "id":2,
+        "name":"power",
+        "num":6,
+        "gold":100,
+        "imgUrl":"til-icon_png"
+    }
+]

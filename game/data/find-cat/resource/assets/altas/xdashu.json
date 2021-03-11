@@ -1,0 +1,34 @@
+{"mc":{
+	"xdashu":{
+		"frameRate":2,
+		"labels":[
+			{"name":"xdashu","frame":1,"end":3}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"xdashu1_png",
+			"x":11,
+			"y":268
+			},
+			{
+			"res":"xdashu2_png",
+			"x":11,
+			"y":203
+			},
+			{
+			"res":"xdashu3_png",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"xdashu1_png":{"x":229,"y":217,"w":207,"h":151},
+		"xdashu3_png":{"x":0,"y":0,"w":229,"h":419},
+		"xdashu2_png":{"x":229,"y":0,"w":208,"h":216}
+	}}
