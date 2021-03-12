@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -25,9 +23,11 @@
 
   <!-- 页面元数据 -->
   
-  <title>分类：前端 - Cream &amp; Forrest</title>
+  <title>将博客部署到 Gitee 和 Coding - Cream &amp; Forrest</title>
   
 
+  
+    <meta name="description" content="近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。">
   
 
   <!-- feed -->
@@ -626,7 +626,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -701,74 +701,233 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
-        
+    
+      <h1 class="title">
+        将博客部署到 Gitee 和 Coding
+      </h1>
+      <div class='new-meta-box'>
         
           
+            
+<div class='new-meta-item author'>
+  <a class='author' target="_blank" href="https://gameofthrones.fandom.com/wiki/Jon_Snow" rel="nofollow noopener">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0.1/assets/72x72/1f419.png">
+    <p>怼怼</p>
+  </a>
+</div>
+
+          
         
-      
-    
-    
-      
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a target="_blank" rel="noopener" href="https://www.cnblogs.com/haccer/articles/12791886.html">
-        exports export import require 的区别
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/Hexo/">Hexo</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2021-02-25</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年3月11日</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a><span class="sep"></span><a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/">JavaScript</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="将博客部署到 Gitee 和 Coding" data-path="/posts/20210311/91af66baec6f/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <p>近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。</p>
+<a id="more"></a>
+<h2 id="Gitee">Gitee</h2>
+<p>在 gitee 创建仓库，仓库名称随意，仓库路径 <code>https://gitee.com/USERNAME/USERNAME</code></p>
+<p>在 setting 中设置公钥，公钥可在 Git Bash 中查看</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>在当前仓库页面中点击“服务”，选择“Gitee Pages”，勾选“强制使用 HTTPS”，点击“启动”</p>
+<p>注意每次推送之后，需要手动在 Gitee Pages 中更新</p>
+<h2 id="Coding">Coding</h2>
+<p>Coding 已经和腾讯云合作，已经有北京和上海的节点</p>
+<p>创建团队，名称随意，之后的个人账户可以是手机邮箱方式或微信授权方式</p>
+<p>创建 DevOps 项目，项目名称、项目标识随意，在新建的项目中创建一个 git 仓库，名称随意</p>
+<p>在个人设置中添加 SSH 公钥</p>
+<p>在项目下选择“持续部署”，“网站托管”，腾讯云实名认证，新建网站。这里的网站名称可以随意填写，与生成的网址没有关系</p>
+<p><a target="_blank" rel="noopener" href="https://coding-pages-bucket-3534856-8451024-14220-529319-1305210172.cos-website.ap-shanghai.myqcloud.com">https://coding-pages-bucket-3534856-8451024-14220-529319-1305210172.cos-website.ap-shanghai.myqcloud.com</a></p>
+<h2 id="三线部署">三线部署</h2>
+<p>以上便实现了 GitHub Gitee Coding 三线部署，接着从仓库的 <code>clone</code> 中复制 SSH 粘贴到站点配置中</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span></span><br><span class="line">    <span class="attr">gitee:</span> <span class="string">git@gitee.com:cream-fancy/Cream-fancy.git</span></span><br><span class="line">    <span class="attr">github:</span> <span class="string">git@github.com:Cream-fancy/Cream-fancy.github.io.git</span></span><br><span class="line">    <span class="attr">coding:</span> <span class="string">git@e.coding.net:cream-fancy/blog/blog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<p>通过 <code>hexo cl &amp;&amp; hexo g -d</code> 即可部署</p>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' target="_blank" rel="noopener" href='https://www.cnblogs.com/haccer/articles/12791886.html'>
-            去源站阅读
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/posts/20210311/91af66baec6f/>http://example.com/posts/20210311/91af66baec6f/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-11T10:15:57+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年3月11日</p>
+  </a>
 </div>
 
-          </div>
         
       
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-  </section>
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20210311/91af66baec6f/&title=将博客部署到 Gitee 和 Coding - Cream & Forrest&summary=近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20210311/91af66baec6f/&title=将博客部署到 Gitee 和 Coding - Cream & Forrest&summary=近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20210311/91af66baec6f/&title=将博客部署到 Gitee 和 Coding - Cream & Forrest&summary=近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
   
-    
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='prev' href='/posts/20210312/276335f30527/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>【李宏毅 ML20】课程介绍</p>
+          <p class='content'>笔记内容来自课程官网 http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.htmlBilibili 视频 https://www.bilibili....</p>
+        </a>
+      
+      
+      
+        <a class='next' href='/posts/20210310/20791212ab7a/'>
+          <p class='title'>git lfs<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Git 大文件存储（LFS）将大文件（例如音频样本，视频，数据集和图形）替换为Git内部的文本指针，同时将文件内容存储在 GitHub.com 或 GitHub Enterprise 等远程服务...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
   
 
 
-    
-  
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -776,136 +935,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Cream & Forrest</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Hexo/" href="/categories/Hexo/"
-            id="categoriesHexo"
-            ><div class='name'>Hexo</div><div class='badge'>(8)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
-            id="categoriesE5898DE7ABAF"
-            ><div class='name'>前端</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/"
-            id="categoriesE5898DE7ABAFJavaScript"
-            ><div class='name'>JavaScript</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Gitee"><span class="toc-text">Gitee</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Coding"><span class="toc-text">Coding</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%BA%BF%E9%83%A8%E7%BD%B2"><span class="toc-text">三线部署</span></a></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Git/" style="font-size: 14px; color: #999">Git</a> <a href="/tags/GitHub/" style="font-size: 24px; color: #555">GitHub</a> <a href="/tags/JavaScript/" style="font-size: 14px; color: #999">JavaScript</a> <a href="/tags/Node/" style="font-size: 14px; color: #999">Node</a> <a href="/tags/Pjax/" style="font-size: 14px; color: #999">Pjax</a> <a href="/tags/Vscode/" style="font-size: 14px; color: #999">Vscode</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">插件</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">机器学习</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 14px; color: #999">爬虫</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 14px; color: #999">笔记</a> <a href="/tags/%E8%80%83%E7%A0%94/" style="font-size: 24px; color: #555">考研</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
 		  
@@ -914,8 +965,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="将博客部署到 Gitee 和 Coding";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

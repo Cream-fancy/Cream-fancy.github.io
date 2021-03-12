@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -25,7 +23,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：机器学习 - Cream &amp; Forrest</title>
+  <title>Machine Learning - Cream &amp; Forrest</title>
   
 
   
@@ -626,7 +624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -701,86 +699,324 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
-        
+    
+      <h1 class="title">
+        Machine Learning
+      </h1>
+      <div class='new-meta-box'>
         
           
+            
+<div class='new-meta-item author'>
+  <a class='author' target="_blank" href="https://gameofthrones.fandom.com/wiki/Jon_Snow" rel="nofollow noopener">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0.1/assets/72x72/1f419.png">
+    <p>怼怼</p>
+  </a>
+</div>
+
+          
         
-      
-    
-    
-      
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/20210216/45216705a0a2/">
-        Machine Learning
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        一、 Introduction
-1.1 Welcome
-Machine Learning
-
-Grew out of work in AI
-New capability for computers
-
-Examples:
-
-Database mining
-Applications can’t program by hand
-Self-customizing programs (用户自定制化程序)...
-      
-    
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/Machine-Learning/">Machine Learning</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2021-02-16</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年2月16日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="Machine Learning" data-path="/posts/20210216/f2d40f53ead3/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <p><a target="_blank" rel="noopener" href="https://github.com/apachecn/AiLearning">https://github.com/apachecn/AiLearning</a></p>
+<h2 id="一、-Introduction">一、 Introduction</h2>
+<h3 id="1-1-Welcome">1.1 Welcome</h3>
+<p>Machine Learning</p>
+<ul>
+<li>Grew out of work in AI</li>
+<li>New capability for computers</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>Database mining</li>
+<li>Applications can’t program by hand</li>
+<li>Self-customizing programs (用户自定制化程序)</li>
+<li>Understanding human learning (brain, real AI)</li>
+</ul>
+<h3 id="1-2-What-is-Machine-Learning">1.2 What is Machine Learning</h3>
+<p>A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.</p>
+<p>Machine learing algorithms:</p>
+<ul>
+<li>Supervised learing</li>
+<li>Unsupervised learing</li>
+</ul>
+<p>Others: Reinforcement learning (强化学习), recommender systems (推荐系统).</p>
+<h3 id="1-3-Supervised-Learning-监督学习">1.3 Supervised Learning (监督学习)</h3>
+<p>Given the “right answer” for each example in the data.</p>
+<p>In every example in data set, we are told what is the “correct answer” that we would have quite liked the algorithm have predicted on that example.</p>
+<ul>
+<li>Regression problem (回归问题)</li>
+</ul>
+<p>to predict a continuous valued output.</p>
+<ul>
+<li>Classification problem (分类问题)</li>
+</ul>
+<p>to predict a discrete valued output.</p>
+<p>支持向量机</p>
+<h3 id="1-4-Unsupervised-Learning-无监督学习">1.4 Unsupervised Learning (无监督学习)</h3>
+<p>一种学习机制，给算法大量的数据，要求它找出数据中蕴含的类型结构。</p>
+<p>只是告诉算法这是一堆数据，但不知道这数据是什么，不知道里面有什么类型，叫什么名字，甚至不知道有哪些类型，但是可以自动找到这些数据中的类型，然后按得到的类型讲这些个体分类。</p>
+<p>聚类算法</p>
+<ul>
+<li>Organize computing clusters</li>
+<li>Social network analysis</li>
+<li>Market segmentation</li>
+<li>Astonomical data analysis</li>
+</ul>
+<p>鸡尾酒会算法</p>
+<p>Cocktail party problem</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[W,s,v] &#x3D; svd((repmat(sum(x.*x,),size(x,1),1).*x)*x&#39;);</span><br><span class="line"></span><br><span class="line">- svd 奇异值分解</span><br></pre></td></tr></table></figure>
+<h2 id="二、Linear-regression-with-one-variable-单变量线性回归">二、Linear regression with one variable (单变量线性回归)</h2>
+<p>2.1 Model representation (模型表示)</p>
+<p>Regression Problem</p>
+<p>Predict real-valued output</p>
+<p>2.2 代价函数
+2.3 代价函数的直观理解I
+2.4 代价函数的直观理解II
+2.5 梯度下降
+2.6 梯度下降的直观理解
+2.7 梯度下降的线性回归
+2.8 接下来的内容</p>
+<h2 id="三、线性代数回顾">三、线性代数回顾</h2>
+<p>3.1 矩阵和向量
+3.2 加法和标量乘法
+3.3 矩阵向量乘法
+3.4 矩阵乘法
+3.5 矩阵乘法的性质
+3.6 逆、转置</p>
+<h2 id="四、多变量线性回归">四、多变量线性回归</h2>
+<p>4.1 多维特征
+4.2 多变量梯度下降
+4.3 梯度下降法实践1-特征缩放
+4.4 梯度下降法实践2-学习率
+4.5 特征和多项式回归
+4.6 正规方程
+4.7 正规方程及不可逆性（选修）</p>
+<h2 id="五、Octave教程-Octave-Tutorial">五、Octave教程(Octave Tutorial)</h2>
+<p>5.1 基本操作
+5.2 移动数据
+5.3 计算数据
+5.4 绘图数据
+5.5 控制语句：for，while，if语句
+5.6 向量化 88
+5.7 工作和提交的编程练习</p>
+<h2 id="六、逻辑回归">六、逻辑回归</h2>
+<p>6.1 分类问题
+6.2 假说表示
+6.3 判定边界
+6.4 代价函数
+6.5 简化的成本函数和梯度下降
+6.6 高级优化
+6.7 多类别分类：一对多</p>
+<h2 id="七、正则化">七、正则化</h2>
+<p>7.1 过拟合的问题
+7.2 代价函数
+7.3 正则化线性回归
+7.4 正则化的逻辑回归模型</p>
+<h2 id="第八、神经网络：表述">第八、神经网络：表述</h2>
+<p>8.1 非线性假设
+8.2 神经元和大脑
+8.3 模型表示1
+8.4 模型表示2
+8.5 样本和直观理解1
+8.6 样本和直观理解II
+8.7 多类分类</p>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/posts/20210216/45216705a0a2/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/posts/20210216/f2d40f53ead3/>http://example.com/posts/20210216/f2d40f53ead3/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-02-16T18:05:56+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年2月16日</p>
+  </a>
 </div>
 
-          </div>
         
       
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-  </section>
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20210216/f2d40f53ead3/&title=Machine Learning - Cream & Forrest&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20210216/f2d40f53ead3/&title=Machine Learning - Cream & Forrest&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20210216/f2d40f53ead3/&title=Machine Learning - Cream & Forrest&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
   
-    
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='prev' href='/posts/20210216/20e2391535af/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Blog 音乐</p>
+          <p class='content'>1. 定制页面
+新建 page
+1hexo new page music
+修改 music/index.md，注意 layout 是指明该页面的布局为 custom-music
+12345678...</p>
+        </a>
+      
+      
+      
+        <a class='next' href='/posts/20210216/8366935d182e/'>
+          <p class='title'>Hexo + GitHub Pages 搭建个人博客<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>1. 搭建
+Hexo + Volantis 主题 + Github Pages
+1.1 资源 cdn 加速
+对于本地的 css js images 等资源文件，引入时可以用 CDN 加速，例如托...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
   
 
 
-    
-  
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -788,136 +1024,28 @@ Self-customizing programs (用户自定制化程序)...
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Cream & Forrest</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Hexo/" href="/categories/Hexo/"
-            id="categoriesHexo"
-            ><div class='name'>Hexo</div><div class='badge'>(8)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%89%8D%E7%AB%AF/" href="/categories/%E5%89%8D%E7%AB%AF/"
-            id="categoriesE5898DE7ABAF"
-            ><div class='name'>前端</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/"
-            id="categoriesE5898DE7ABAFJavaScript"
-            ><div class='name'>JavaScript</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81-Introduction"><span class="toc-text">一、 Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-Welcome"><span class="toc-text">1.1 Welcome</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-What-is-Machine-Learning"><span class="toc-text">1.2 What is Machine Learning</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-Supervised-Learning-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-text">1.3 Supervised Learning (监督学习)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-Unsupervised-Learning-%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-text">1.4 Unsupervised Learning (无监督学习)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Linear-regression-with-one-variable-%E5%8D%95%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92"><span class="toc-text">二、Linear regression with one variable (单变量线性回归)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9B%9E%E9%A1%BE"><span class="toc-text">三、线性代数回顾</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%A4%9A%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92"><span class="toc-text">四、多变量线性回归</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81Octave%E6%95%99%E7%A8%8B-Octave-Tutorial"><span class="toc-text">五、Octave教程(Octave Tutorial)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92"><span class="toc-text">六、逻辑回归</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E6%AD%A3%E5%88%99%E5%8C%96"><span class="toc-text">七、正则化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E3%80%81%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%EF%BC%9A%E8%A1%A8%E8%BF%B0"><span class="toc-text">第八、神经网络：表述</span></a></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Git/" style="font-size: 14px; color: #999">Git</a> <a href="/tags/GitHub/" style="font-size: 24px; color: #555">GitHub</a> <a href="/tags/JavaScript/" style="font-size: 14px; color: #999">JavaScript</a> <a href="/tags/Node/" style="font-size: 14px; color: #999">Node</a> <a href="/tags/Pjax/" style="font-size: 14px; color: #999">Pjax</a> <a href="/tags/Vscode/" style="font-size: 14px; color: #999">Vscode</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 14px; color: #999">插件</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 14px; color: #999">机器学习</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 14px; color: #999">爬虫</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 14px; color: #999">笔记</a> <a href="/tags/%E8%80%83%E7%A0%94/" style="font-size: 24px; color: #555">考研</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
 		  
@@ -926,8 +1054,8 @@ Self-customizing programs (用户自定制化程序)...
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Machine Learning";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

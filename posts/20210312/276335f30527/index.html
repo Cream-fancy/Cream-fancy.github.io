@@ -23,11 +23,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>博客部署到 Gitee 和 Coding - Cream &amp; Forrest</title>
+  <title>【李宏毅 ML20】课程介绍 - Cream &amp; Forrest</title>
   
 
-  
-    <meta name="description" content="近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。">
   
 
   <!-- feed -->
@@ -712,16 +710,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title">
-        博客部署到 Gitee 和 Coding
+        【李宏毅 ML20】课程介绍
       </h1>
       <div class='new-meta-box'>
         
           
             
 <div class='new-meta-item author'>
-  <a class='author' target="_blank" href="https://gameofthrones.fandom.com/wiki/Jon_Snow" rel="nofollow noopener">
-    <img no-lazy src="https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0.1/assets/72x72/1f419.png">
-    <p>怼怼</p>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
   </a>
 </div>
 
@@ -732,7 +730,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='new-meta-item category'>
     <a class='notlink'>
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/Hexo/">Hexo</a>
+      <a class="category-link" href="/categories/Machine-Learning/">Machine Learning</a>
     </a>
   </div>
 
@@ -743,7 +741,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2021年3月11日</p>
+    <p>发布于：2021年3月12日</p>
   </a>
 </div>
 
@@ -754,7 +752,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="博客部署到 Gitee 和 Coding" data-path="/posts/20210311/61c4425044f1/">
+      <div id="lc-pv" data-title="【李宏毅 ML20】课程介绍" data-path="/posts/20210312/276335f30527/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -772,24 +770,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <p>近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。</p>
-<a id="more"></a>
-<h2 id="Gitee">Gitee</h2>
-<p>在 gitee 创建仓库，仓库名称随意，仓库路径 <code>https://gitee.com/USERNAME/USERNAME</code>，在 setting 中设置公钥，公钥可在 Git Bash 中查看</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>在当前仓库页面中点击“服务”，选择“Gitee Pages”，勾选“强制使用 HTTPS”，点击“启动”</p>
-<p>注意每次推送之后，需要手动在 Gitee Pages 中更新</p>
-<h2 id="Coding">Coding</h2>
-<p>Coding 已经和腾讯云合作，已经有北京和上海的节点</p>
-<p>创建团队，名称可以是用户名，之后的个人账户可以是手机邮箱方式或微信授权方式</p>
-<p>创建 DevOps 项目，项目名称、项目标识随意，在新建的项目中创建一个 git 仓库，名称我写的是 <code>blog</code></p>
-<p>在个人设置中添加 SSH 公钥</p>
-<p>在项目下选择“持续部署”，“网站托管”，腾讯云实名认证，新建网站。这里的网站名称可以随意填写，与生成的网址没有关系</p>
-<p><a target="_blank" rel="noopener" href="https://coding-pages-bucket-3534856-8451024-14220-529319-1305210172.cos-website.ap-shanghai.myqcloud.com">https://coding-pages-bucket-3534856-8451024-14220-529319-1305210172.cos-website.ap-shanghai.myqcloud.com</a></p>
-<h2 id="三线部署">三线部署</h2>
-<p>以上便实现了 GitHub Gitee Coding 三线部署，接着从仓库的 <code>clone</code> 中复制 SSH 粘贴到站点配置中</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span></span><br><span class="line">    <span class="attr">gitee:</span> <span class="string">git@gitee.com:cream-fancy/Cream-fancy.git</span></span><br><span class="line">    <span class="attr">github:</span> <span class="string">git@github.com:Cream-fancy/Cream-fancy.github.io.git</span></span><br><span class="line">    <span class="attr">coding:</span> <span class="string">git@e.coding.net:cream-fancy/blog/blog.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-<p>通过 <code>hexo cl &amp;&amp; hexo g -d</code> 即可部署</p>
+  <div class="note link blue"><p><strong>笔记内容来自</strong></p><p>课程官网 <a target="_blank" rel="noopener" href="http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html">http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html</a>Bilibili 视频 <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JE411g7XF">https://www.bilibili.com/video/BV1JE411g7XF</a></p></div>
 
   
   
@@ -807,7 +788,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/posts/20210311/61c4425044f1/>http://example.com/posts/20210311/61c4425044f1/</a></p>
+                <p>本文永久链接是：<a href=http://example.com/posts/20210312/276335f30527/>http://example.com/posts/20210312/276335f30527/</a></p>
               
             
           </blockquote>
@@ -824,10 +805,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-11T10:15:57+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-12T10:41:24+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年3月11日</p>
+    <p>更新于：2021年3月12日</p>
   </a>
 </div>
 
@@ -846,7 +827,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20210311/61c4425044f1/&title=博客部署到 Gitee 和 Coding - Cream & Forrest&summary=近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20210312/276335f30527/&title=【李宏毅 ML20】课程介绍 - Cream & Forrest&summary="
           
           >
           
@@ -858,7 +839,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20210311/61c4425044f1/&title=博客部署到 Gitee 和 Coding - Cream & Forrest&summary=近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20210312/276335f30527/&title=【李宏毅 ML20】课程介绍 - Cream & Forrest&summary="
           
           >
           
@@ -870,7 +851,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20210311/61c4425044f1/&title=博客部署到 Gitee 和 Coding - Cream & Forrest&summary=近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20210312/276335f30527/&title=【李宏毅 ML20】课程介绍 - Cream & Forrest&summary="
           
           >
           
@@ -903,9 +884,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
       
       
-        <a class='next' href='/posts/20210310/20791212ab7a/'>
-          <p class='title'>git lfs<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Git 大文件存储（LFS）将大文件（例如音频样本，视频，数据集和图形）替换为Git内部的文本指针，同时将文件内容存储在 GitHub.com 或 GitHub Enterprise 等远程服务...</p>
+        <a class='next' href='/posts/20210311/91af66baec6f/'>
+          <p class='title'>将博客部署到 Gitee 和 Coding<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>近几天 GitHub 访问速度越来越慢，很长一段时间国内连接不上，所以打算将博客部署到 Gitee 和 Coding 上。
+
+Gitee
+在 gitee 创建仓库，仓库名称随意，仓库路径 htt...</p>
         </a>
       
     </div>
@@ -931,20 +915,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
-    
-  <header>
-    
-      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Gitee"><span class="toc-text">Gitee</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Coding"><span class="toc-text">Coding</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%BA%BF%E9%83%A8%E7%BD%B2"><span class="toc-text">三线部署</span></a></li></ol>
-    </div>
-  </section>
-
 
   
 
@@ -960,7 +930,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="博客部署到 Gitee 和 Coding";
+  pdata.postTitle="【李宏毅 ML20】课程介绍";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
