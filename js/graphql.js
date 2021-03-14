@@ -1,7 +1,7 @@
 class GraphQL {
   constructor(owner, repo, repoId) {
     this.owner = owner || "Cream-fancy";
-    this.repo = repo || "grapql-test";
+    this.repo = repo || "blog-talk";
     this.repoId = repoId || "MDEwOlJlcG9zaXRvcnkzNDE5MDE0NzA=";
   }
 
@@ -52,6 +52,7 @@ class GraphQL {
             id
             number
             createdAt
+            title
             bodyHTML
             comments(first: 1) {
               totalCount
@@ -75,6 +76,26 @@ class GraphQL {
       operationName: 'getIssues',
       query: ql,
       variables: vars
+    }
+  }
+
+  getLabels() {
+    return {
+      operationName: 'getLabels',
+      query: `
+      query getLabels($owner: String!, $repo: String!) {
+        repository(owner: $owner, name: $repo) {
+          labels(first: 10) {
+            nodes {
+              id
+              name
+              color
+            }
+          }
+        }
+      }
+      `,
+      variables: { owner: this.owner, repo: this.repo }
     }
   }
 

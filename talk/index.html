@@ -732,13 +732,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </svg>
 
 <div class="is-container" style="width:100%;">
-  <div class="is-form">
-    <textarea id="talk-text" type="text" placeholder="内容" style="padding: 3px 8px; resize:vertical;"></textarea>
-    <input id="talk-btn" type="button" value="确定">
+  <div class="is-form white-box">
+    <div class="tabs" id="talk-markdown"><ul class="nav-tabs"><li class="tab active"><a class="#talk-markdown-1">编辑</a></li><li class="tab"><a class="#talk-markdown-2">预览</a></li></ul><div class="tab-content"><div class="tab-pane active" id="talk-markdown-1"><p><textarea id="talk-markdown-content" type="text" placeholder="内容"></textarea></p></div><div class="tab-pane" id="talk-markdown-2"><div id="talk-markdown-preview"></div></div></div></div>
+    <div id="talk-labels" class="is-labels"></div>
+    <div class="is-button-group">
+      <div id="talk-release" class="shadow">发布</div>
+    </div>
   </div>
   <div class="is-issues">
-    <div style="position: relative;" id="talk-dom-node">
+    <div style="position: relative;" id="talk-issues">
     </div>
+  </div>
+  <div class="is-footer">
+    <div class="is-loader">
+      <div class="is-loader-img"></div>
+      <div class="is-loader-text">loading</div>
+    </div>
+    <div class="is-more white-box shadow is-issue-hide" id="talk-more">加载更多</div>
   </div>
 </div>
 

@@ -18,11 +18,11 @@ export default {
     };
     return fmt;
   },
-  requestGraphql: (jsonStr, token) => {
+  requestGraphql: (reqObj, token) => {
     return new Promise((resolve, reject) => {
       fetch('https://api.github.com/graphql', {
         method: 'POST',
-        body: jsonStr,
+        body: JSON.stringify(reqObj),
         headers: new Headers({
           'content-type': 'application/json',
           'Authorization': `bearer ${token}`
@@ -30,6 +30,20 @@ export default {
       }).then(response => response.json())
         .then(data => resolve(data))
         .catch(error => reject(error))
+    })
+  },
+
+  markdownPreview(reqText, token) {
+    return new Promise((resolve, reject) => {
+      fetch('https://api.github.com/markdown', {
+        method: 'POST',
+        body: JSON.stringify({ text: reqText }),
+        headers: new Headers({
+          'accept': 'application/vnd.github.v3+json',
+          'content-type': 'application/json',
+          'Authorization': `bearer ${token}`
+        })
+      }).then(response => resolve(response.text()))
     })
   },
   generateToken: key => CryptoJS.AES.decrypt(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Hex.parse('d761690d21d9e1aee509d7aa1f0697ead8d9850bed741be45fc2ffc60ec647c1a7683e2642872a8fa18ffb6bde1d7580')), CryptoJS.enc.Utf8.parse(key), { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }).toString(CryptoJS.enc.Utf8)

@@ -15,11 +15,7 @@ export default {
     localStorage.setItem('auth', JSON.stringify(Cream.auth));
     switch (location.pathname) {
       case '/talk/':
-        $('#talk-btn').on('click', ev => {
-          Cream.talk.addTalk();  // TODO: 多人冲突的情况怎么解决
-        });
-        Cream.talk.pageInfo.hasNextPage = true, Cream.talk.pageInfo.endCursor = null;
-        Cream.talk.getTalk();
+        Cream.talk.init();
         break;
       case '/auth/':
         pjax.loadUrl('/');  // TODO: 返回跳转来的页面
