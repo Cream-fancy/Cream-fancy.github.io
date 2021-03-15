@@ -2807,9 +2807,6 @@ ul.list-v >li>a:hover {
   .is-container .is-issue-text {
     margin: auto 0.2em;
   }
-  .is-container .is-issue-date {
-    font-size: 13px;
-  }
   .is-container .is-issue-end {
     display: none;
   }
