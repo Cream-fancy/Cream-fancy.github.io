@@ -31,18 +31,25 @@ export default {
     $('#talk-more').on('click', ev => {
       this.getTalk();
     })
-    $('.tabs .nav-tabs').on('click', 'a', async ev => {
+    $('.tabs .nav-tabs').on('click', 'a', ev => {
       let target = $(ev.target);
-      console.log(this.el.tabIdx, target);
       if (this.el.tabIdx == 1 && target.hasClass('#talk-markdown-2')) {
-        let htmlText = await Cream.utils.markdownPreview(this.el.content.val().trim(), Cream.auth.token);
-        this.el.preview.html(htmlText);
+        this.getPreview();
       }
       this.el.tabIdx = target.hasClass('#talk-markdown-2') ? 2 : 1;
     })
     this.pageInfo.hasNextPage = true, this.pageInfo.endCursor = null;
     this.getLabels();
     this.getTalk();
+  },
+
+  async getPreview() {
+    const talkContent = this.el.content.val().trim();
+    if (talkContent != '') {
+      this.el.preview.html('<p class="color: #cfd3d7">Loading...</p>')
+      let htmlText = await Cream.utils.markdownPreview(talkContent, Cream.auth.token);
+      this.el.preview.html(htmlText);
+    }
   },
 
   getLabelColor(color) {

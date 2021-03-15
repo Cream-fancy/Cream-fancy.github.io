@@ -12,6 +12,7 @@ export default {
   },
 
   success() {
+    Cream.auth.username = this.usernameMap(Cream.auth.username);
     localStorage.setItem('auth', JSON.stringify(Cream.auth));
     switch (location.pathname) {
       case '/talk/':
@@ -40,6 +41,15 @@ export default {
       default:
         pjax.loadUrl('/auth/');
         break;
+    }
+  },
+
+  usernameMap(usn) {
+    usn = usn.toLowerCase();
+    if (['forrest', '怼怼', 'gzm'].some(v => v == usn)) {
+      return 'Forrest'
+    } else {
+      return 'Cream'
     }
   }
 }

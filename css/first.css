@@ -2397,10 +2397,16 @@ ul.list-v >li>a:hover {
   padding: 16px;
 }
 .is-container .is-form #talk-markdown-content {
-  padding: 3px 8px;
+  padding: 8px;
   width: 100%;
-  height: 120px;
   resize: vertical;
+  min-height: 100px;
+  max-height: 500px;
+  border-color: #dfe2e5;
+  border-radius: 6px;
+}
+.is-container .is-form #talk-markdown-content:focus {
+  border-color: #d4e2f8;
 }
 .is-container .is-form #talk-release {
   padding: 5px 16px;
@@ -2436,7 +2442,6 @@ ul.list-v >li>a:hover {
 .is-container .is-footer .is-loader .is-loader-text {
   line-height: 40px;
   margin-left: 8px;
-  font-size: 1.5rem;
   color: var(--color-meta);
 }
 @-moz-keyframes loader-rotate {
@@ -2802,6 +2807,9 @@ ul.list-v >li>a:hover {
   .is-container .is-issue-text {
     margin: auto 0.2em;
   }
+  .is-container .is-issue-date {
+    font-size: 13px;
+  }
   .is-container .is-issue-end {
     display: none;
   }
@@ -2835,8 +2843,14 @@ ul.list-v >li>a:hover {
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 rgba(27,31,35,0.12);
 }
+.labels-label:not(.label-active) {
+  color: var(--color-text) !important;
+  background: var(--color-card) !important;
+  border: 1px solid rgba(27,31,35,0.149);
+}
 .labels-label.label-active::before {
-  content: '✔';
+  content: '#';
+  margin-right: 5px;
 }
 @-moz-keyframes is-rotate {
   0% {
