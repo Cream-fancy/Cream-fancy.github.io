@@ -23,7 +23,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>收藏夹 - Cream &amp; Forrest</title>
+  <title>Git - Cream &amp; Forrest</title>
+  
+    <meta name="keywords" content="Git">
   
 
   
@@ -710,7 +712,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title">
-        收藏夹
+        Git
       </h1>
       <div class='new-meta-box'>
         
@@ -734,7 +736,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2021年3月9日</p>
+    <p>发布于：2021年3月16日</p>
   </a>
 </div>
 
@@ -745,7 +747,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="收藏夹" data-path="/posts/20210309/2ad5f0511512/">
+      <div id="lc-pv" data-title="Git" data-path="/posts/20210316/b1d8b4ceff33/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -763,66 +765,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <h2 id="GitHub-项目">GitHub 项目</h2>
-<h3 id="前端美化">前端美化</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a target="_blank" rel="noopener" href="https://github.com/sweetalert2/sweetalert2">Sweet Alert 2</a></td>
-<td style="text-align:left">用于替换JavaScript的弹出框</td>
-</tr>
-</tbody>
-</table>
-<h3 id="资源">资源</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a target="_blank" rel="noopener" href="https://github.com/up209d/ResourcesSaverExt">Resources Saver Extension</a></td>
-<td style="text-align:left">下载网站资源文件</td>
-</tr>
-<tr>
-<td style="text-align:left"><a target="_blank" rel="noopener" href="https://github.com/WebStackPage/WebStackPage.github.io">Webstack网址导航</a></td>
-<td style="text-align:left">网址导航站</td>
-</tr>
-<tr>
-<td style="text-align:left"><a target="_blank" rel="noopener" href="https://github.com/algorithm-visualizer/algorithm-visualizer">算法可视化</a></td>
-<td style="text-align:left">在线交互式的可视化算法学习</td>
-</tr>
-</tbody>
-</table>
-<h2 id="网址集合">网址集合</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">名称</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a target="_blank" rel="noopener" href="http://emojihomepage.com/">emoji图标</a></td>
-<td style="text-align:left">Emoji快速检索</td>
-</tr>
-<tr>
-<td style="text-align:left"><a target="_blank" rel="noopener" href="http://jshaman.com/">js混淆</a></td>
-<td style="text-align:left">js代码混淆</td>
-</tr>
-</tbody>
-</table>
-<h2 id="电影">电影</h2>
-<p>阿尔法狼伴归途</p>
+  <p>安装 <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a>，启动 Git Bash</p>
+<h2 id="入门">入门</h2>
+<h3 id="基本语法">基本语法</h3>
+<p><strong>工作流</strong></p>
+<p>你的本地仓库由 git 维护的三棵“树”组成</p>
+<ol>
+<li>工作目录 working dir，它持有实际文件</li>
+<li>暂存区 Index，它像个缓存区域，临时保存你的改动</li>
+<li>HEAD，它指向你最后一次提交的结果</li>
+</ol>
+<p><strong>创建新仓库</strong></p>
+<p>初始化目录作为 Git 仓库</p>
+<p><code>git init</code></p>
+<p><strong>检出仓库</strong></p>
+<p>执行如下命令以创建一个本地仓库的克隆版本</p>
+<p><code>git clone /path/to/repository</code></p>
+<p>如果是远端服务器上的仓库，你的命令会是这个样子</p>
+<p><code>git clone username@host:/path/to/repository</code></p>
+<p><strong>添加和提交</strong></p>
+<p>你可以提出更改（把它们添加到暂存区），使用如下命令</p>
+<p><code>git add &lt;filename&gt;</code><br>
+<code>git add *</code></p>
+<p>这是 git 基本工作流程的第一步；使用如下命令以实际提交改动</p>
+<p><code>git commit -m &quot;some messages&quot;</code></p>
+<p>现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库。</p>
+<p><strong>推送改动</strong></p>
+<p>你的改动现在已经在本地仓库的 HEAD 中了。执行如下命令以将这些改动提交到远端仓库</p>
+<p><code>git push origin master</code></p>
+<p>可以把 master 换成你想要推送的任何分支</p>
+<p>如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器，你可以使用如下命令添加</p>
+<p><code>git remote add origin &lt;server&gt;</code></p>
+<p>如此你就能够将你的改动推送到所添加的服务器上去了</p>
+<p><strong>Read more</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/manual/git-guide/">git 简明教程</a></p>
+<h3 id="推送项目到-GitHub">推送项目到 GitHub</h3>
+<p><a href="mailto:git@github.com">git@github.com</a>:Cream-fancy/blog-emotion.git</p>
 
   
   
@@ -840,7 +818,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/posts/20210309/2ad5f0511512/>http://example.com/posts/20210309/2ad5f0511512/</a></p>
+                <p>本文永久链接是：<a href=http://example.com/posts/20210316/b1d8b4ceff33/>http://example.com/posts/20210316/b1d8b4ceff33/</a></p>
               
             
           </blockquote>
@@ -857,7 +835,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-16T00:37:48+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-16T11:39:26+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2021年3月16日</p>
@@ -868,6 +846,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Git/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Git</p></a></div>
+
 
         
       
@@ -879,7 +860,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20210309/2ad5f0511512/&title=收藏夹 - Cream & Forrest&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20210316/b1d8b4ceff33/&title=Git - Cream & Forrest&summary="
           
           >
           
@@ -891,7 +872,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20210309/2ad5f0511512/&title=收藏夹 - Cream & Forrest&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20210316/b1d8b4ceff33/&title=Git - Cream & Forrest&summary="
           
           >
           
@@ -903,7 +884,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20210309/2ad5f0511512/&title=收藏夹 - Cream & Forrest&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20210316/b1d8b4ceff33/&title=Git - Cream & Forrest&summary="
           
           >
           
@@ -934,18 +915,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
       
-        <a class='prev' href='/posts/20210310/3781e3ace5bb/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Git LFS</p>
-          <p class='content'>Git 大文件存储（LFS）将大文件（例如音频样本，视频，数据集和图形）替换为Git内部的文本指针，同时将文件内容存储在 GitHub.com 或 GitHub Enterprise 等远程服务...</p>
-        </a>
       
       
-      
-        <a class='next' href='/posts/20210307/6d1cb6fca681/'>
-          <p class='title'>Blog 加密<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>AES 加密
-密钥必须是 16 位
-https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.js
+        <a class='next' href='/posts/20210316/f95ce678d4b6/'>
+          <p class='title'>Blog 表情<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>新浪微博
+https://api.weibo.com/2/emotions.json?source=1362404091
 </p>
         </a>
       
@@ -982,7 +957,7 @@ https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.js
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub-%E9%A1%B9%E7%9B%AE"><span class="toc-text">GitHub 项目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E7%BE%8E%E5%8C%96"><span class="toc-text">前端美化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%84%E6%BA%90"><span class="toc-text">资源</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E5%9D%80%E9%9B%86%E5%90%88"><span class="toc-text">网址集合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E5%BD%B1"><span class="toc-text">电影</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A5%E9%97%A8"><span class="toc-text">入门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-text">基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E9%A1%B9%E7%9B%AE%E5%88%B0-GitHub"><span class="toc-text">推送项目到 GitHub</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -1001,7 +976,7 @@ https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.js
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="收藏夹";
+  pdata.postTitle="Git";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
