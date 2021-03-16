@@ -765,42 +765,37 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <p>安装 <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a>，启动 Git Bash</p>
+  <h2 id="安装">安装</h2>
+<p>安装 <a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git</a>，启动 Git Bash</p>
+<p>配置 git</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;GitHub Username&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;GitHub Email&quot;</span></span><br></pre></td></tr></table></figure>
+<p>生成 ssh key</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> .ssh</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;GitHub Email&quot;</span></span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 <h2 id="入门">入门</h2>
 <h3 id="基本语法">基本语法</h3>
 <p><strong>工作流</strong></p>
 <p>你的本地仓库由 git 维护的三棵“树”组成</p>
 <ol>
-<li>工作目录 working dir，它持有实际文件</li>
+<li>工作目录 Working dir，它持有实际文件</li>
 <li>暂存区 Index，它像个缓存区域，临时保存你的改动</li>
 <li>HEAD，它指向你最后一次提交的结果</li>
 </ol>
 <p><strong>创建新仓库</strong></p>
-<p>初始化目录作为 Git 仓库</p>
-<p><code>git init</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 初始化目录作为 Git 仓库</span></span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
 <p><strong>检出仓库</strong></p>
-<p>执行如下命令以创建一个本地仓库的克隆版本</p>
-<p><code>git clone /path/to/repository</code></p>
-<p>如果是远端服务器上的仓库，你的命令会是这个样子</p>
-<p><code>git clone username@host:/path/to/repository</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 执行如下命令以创建一个本地仓库的克隆版本</span></span><br><span class="line">git <span class="built_in">clone</span> /path/to/repository</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果是远端服务器上的仓库，你的命令会是这个样子</span></span><br><span class="line">git <span class="built_in">clone</span> username@host:/path/to/repository</span><br></pre></td></tr></table></figure>
 <p><strong>添加和提交</strong></p>
-<p>你可以提出更改（把它们添加到暂存区），使用如下命令</p>
-<p><code>git add &lt;filename&gt;</code><br>
-<code>git add *</code></p>
-<p>这是 git 基本工作流程的第一步；使用如下命令以实际提交改动</p>
-<p><code>git commit -m &quot;some messages&quot;</code></p>
-<p>现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 你可以提出更改（把它们添加到暂存区），使用如下命令</span></span><br><span class="line">git add &lt;filename&gt;</span><br><span class="line">git add *</span><br><span class="line"></span><br><span class="line"><span class="comment"># 这是 git 基本工作流程的第一步；使用如下命令以实际提交改动</span></span><br><span class="line">git commit -m <span class="string">&quot;some messages&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库</span></span><br></pre></td></tr></table></figure>
 <p><strong>推送改动</strong></p>
-<p>你的改动现在已经在本地仓库的 HEAD 中了。执行如下命令以将这些改动提交到远端仓库</p>
-<p><code>git push origin master</code></p>
-<p>可以把 master 换成你想要推送的任何分支</p>
-<p>如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器，你可以使用如下命令添加</p>
-<p><code>git remote add origin &lt;server&gt;</code></p>
-<p>如此你就能够将你的改动推送到所添加的服务器上去了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 现在改动已在本地仓库的 HEAD 中了，将这些改动提交到远端仓库 master 分支</span></span><br><span class="line">git push origin master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器</span></span><br><span class="line">git remote add origin &lt;server&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 如此你就能够将你的改动推送到所添加的服务器上去了</span></span><br></pre></td></tr></table></figure>
 <p><strong>Read more</strong></p>
 <p><a target="_blank" rel="noopener" href="https://www.runoob.com/manual/git-guide/">git 简明教程</a></p>
-<h3 id="推送项目到-GitHub">推送项目到 GitHub</h3>
-<p><a href="mailto:git@github.com">git@github.com</a>:Cream-fancy/blog-emotion.git</p>
+<h3 id="推送新项目到-GitHub">推送新项目到 GitHub</h3>
+<p>在 GitHub 创建一个空仓库 blog-emotion</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 初始化本地要提交的仓库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加到暂存区</span></span><br><span class="line">git add *</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交到 HEAD</span></span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接远程服务器</span></span><br><span class="line">git remote add origin <span class="string">&quot;git@github.com:Cream-fancy/blog-emotion.git&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交到远程服务器</span></span><br><span class="line">git push origin master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 运行报错，因为需要先 pull 到本地文件夹</span></span><br><span class="line">git pull --rebase origin master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<h3 id="其他">其他</h3>
+<p><strong>删除本地 Git 仓库</strong></p>
+<p>删除 <code>.git</code> 文件夹</p>
 
   
   
@@ -957,7 +952,7 @@ https://api.weibo.com/2/emotions.json?source=1362404091
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A5%E9%97%A8"><span class="toc-text">入门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-text">基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E9%A1%B9%E7%9B%AE%E5%88%B0-GitHub"><span class="toc-text">推送项目到 GitHub</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A5%E9%97%A8"><span class="toc-text">入门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-text">基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%88%B0-GitHub"><span class="toc-text">推送新项目到 GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a></li></ol></li></ol>
     </div>
   </section>
 
