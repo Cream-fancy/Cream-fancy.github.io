@@ -15,6 +15,9 @@ export default {
       customScript.insertAdjacentElement('beforeend', jsAplayer);
     }
   },
+  queryMusic() {
+    // http://musicapi.leanapp.cn/search?keywords=
+  },
   queryTv() {
     document.getElementById('custom-music-btn').addEventListener('click', () => {
       console.log(document.getElementById('custom-music-kw').value);
