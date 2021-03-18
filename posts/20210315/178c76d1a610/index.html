@@ -763,7 +763,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  
+  <h3 id="GitHub-Action-实现每日体温自动上报">GitHub Action 实现每日体温自动上报</h3>
+<p>采用 Python + Workflow 实现自动上报，<a target="_blank" rel="noopener" href="https://link">项目地址</a></p>
+<p>首先在 GitHub 创建一个仓库 yzdx-temperature-report</p>
+<p>给 Pycharm 安装 .ignore 插件 settings &gt; plugins</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add *</span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br><span class="line">git branch -M master</span><br><span class="line">git remote add origin git@github.com:Cream-fancy/yzdx-temperature-report.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<h3 id="采坑">采坑</h3>
+<p><strong>手动触发 workflow</strong></p>
+<p>GitHub Ac­tions 默认是不开启手动触发的，需要在 work­flow 文件中设置 workflow_dispatch 触发事件。</p>
+
   
   
     
@@ -913,6 +921,20 @@ https://api.weibo.com/2/emotions.json?source=1362404091
     
 
 
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#GitHub-Action-%E5%AE%9E%E7%8E%B0%E6%AF%8F%E6%97%A5%E4%BD%93%E6%B8%A9%E8%87%AA%E5%8A%A8%E4%B8%8A%E6%8A%A5"><span class="toc-text">GitHub Action 实现每日体温自动上报</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%87%E5%9D%91"><span class="toc-text">采坑</span></a></li></ol>
+    </div>
+  </section>
 
 
   

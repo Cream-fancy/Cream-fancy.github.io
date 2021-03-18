@@ -774,7 +774,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h2 id="入门">入门</h2>
 <h3 id="基本语法">基本语法</h3>
 <p><strong>工作流</strong></p>
-<p>你的本地仓库由 git 维护的三棵“树”组成</p>
+<p>你的本地仓库由 Git 维护的三棵“树”组成</p>
 <ol>
 <li>工作目录 Working dir，它持有实际文件</li>
 <li>暂存区 Index，它像个缓存区域，临时保存你的改动</li>
@@ -796,7 +796,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="其他">其他</h3>
 <p><strong>删除本地 Git 仓库</strong></p>
 <p>删除 <code>.git</code> 文件夹</p>
-
+<p><strong>.gitignore 忽略之前提交的文件</strong></p>
+<p>之前不小心提交了 .idea 文件夹，但是仅仅在 .gitignore 文件中添加 .idea 之后，并不会删除仓库中的文件，具体操作如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清除本地缓存（改变成未 track 状态）</span></span><br><span class="line"><span class="comment"># xxx表示不想版本控制的文件，例如 .idea</span></span><br><span class="line"><span class="comment"># .gitignore中的忽略规则应该与之相对应</span></span><br><span class="line">git rm -r --cached xxx</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加除了忽略文件外的所有文件</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;delete .idea&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 强制推送</span></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
   
   
     
