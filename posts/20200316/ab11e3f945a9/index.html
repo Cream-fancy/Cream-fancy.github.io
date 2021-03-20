@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -25,7 +23,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2021 - Cream &amp; Forrest</title>
+  <title>现代操作系统 - Cream &amp; Forrest</title>
+  
+    <meta name="keywords" content="阅读">
   
 
   
@@ -107,7 +107,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header always shadow blur "  >
+<header id="l_header" class="l_header always shadow blur show"  >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -626,7 +626,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -702,192 +702,456 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
     
-      
-      
+    
+      <h1 class="title">
+        现代操作系统
+      </h1>
+      <div class='new-meta-box'>
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/20210216/080bf855c5c6/">
-        Blog 音乐
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' target="_blank" href="https://gameofthrones.fandom.com/wiki/Jon_Snow" rel="nofollow noopener">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0.1/assets/72x72/1f419.png">
+    <p>怼怼</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年3月16日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
       
-        1. 定制页面
-新建 page
-1hexo new page music
-修改 music/index.md，注意 layout 是指明该页面的布局为 custom-music
-12345678910111213---layout: custom-musicindex: truesidebar: [toc]---## 欧美&lt;meting-js server=&quot;netease&...
-      
-    
+      <div id="lc-pv" data-title="现代操作系统" data-path="/posts/20200316/ab11e3f945a9/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-02-16</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h2 id="1-INTRODUCTION">1 INTRODUCTION</h2>
+<p>operating system
+shell
+GUI (Graphical User Interface)
+Most computers have two modes of operation: kernel mode and user mode.</p>
+<h3 id="1-1-WHAT-IS-AN-OPERATING-SYSTEM">1.1 WHAT IS AN OPERATING SYSTEM?</h3>
+<p><strong>1.1.1 The Operating System as an Extended Machine</strong></p>
+<p><strong>architecture</strong> is primitive and awkward to program.</p>
+<p><strong>SATA</strong> (Serial ATA) hard disks</p>
+<ul>
+<li>
+<p>at the hardware level</p>
+</li>
+<li>
+<p><strong>disk driver</strong> provides an interface</p>
+</li>
+<li>
+<p><strong>files</strong> that programs can create, write, and read them</p>
+</li>
+</ul>
+<p><strong>1.1.2 The Operating System as a Resource Manager</strong></p>
+<p>manage the pieces of a complex system. provide for an orderly and controlled allocation of the processors, memories, and I/O devices.</p>
+<p><strong>multiplexing</strong> (sharing) resources in two different ways, in time and in space.</p>
+<h3 id="1-2-HISTORY-OF-OPERATING-SYSTEMS">1.2 HISTORY OF OPERATING SYSTEMS</h3>
+<p><strong>1.2.1 The First Generation (1945–55): Vacuum Tubes</strong></p>
+<p><strong>1.2.2 The Second Generation (1955–65): Transistors and Batch Systems</strong></p>
+<p><strong>1.2.3 The Third Generation (1965–1980): ICs and Multiprogramming</strong></p>
+<p><strong>1.2.4 The Fourth Generation (1980–Present): Personal Computers</strong></p>
+<p><strong>1.2.5 The Fifth Generation (1990–Present): Mobile Computers</strong></p>
+<h3 id="1-3-COMPUTER-HARDWARE-REVIEW">1.3 COMPUTER HARDWARE REVIEW</h3>
+<p>The CPU, memory, and I/O devices are all connected by a system bus and communicate with one another over it.</p>
+<p><strong>1.3.1 Processors</strong></p>
+<p>special registers</p>
+<ul>
+<li>
+<p><strong>program counter</strong> contains the memory address of the next instruction to be fetched.</p>
+</li>
+<li>
+<p><strong>stack pointer</strong> points to the top of the current stack in memory.</p>
+</li>
+<li>
+<p><strong>PSW (Program Status Word)</strong> contains the condition code bits, the CPU priority, the mode, and various other control bits.</p>
+</li>
+</ul>
+<p><strong>pipeline</strong>. a CPU might have separate fetch, decode, and execute units, so that while it is executing instruction n, it could also be decoding instruction n + 1 and fetching instruction n + 2.</p>
+<p><strong>superscalar CPU</strong>. one for integer arithmetic, one for floating-point arithmetic, and one for Boolean operations. Two or more instructions are fetched at once, decoded, and dumped into a holding buffer until they can be executed.</p>
+<p><strong>system call</strong> traps into the kernel and invokes the operating system.</p>
+<p><strong>Multithreaded and Multicore Chips</strong></p>
+<p><strong>multithreading</strong> is allow the CPU to hold the state of two different threads and then switch back and forth on a nanosecond time scale.</p>
+<p><strong>GPU (Graphics Processing Unit)</strong> is a processor with thousands of tiny cores. Good for many small computations done in parallel. Not so good at serial tasks.</p>
+<p><strong>1.3.2 Memory</strong></p>
+<p>volatile</p>
+<p>SRAM (Static Random Access Memory)
+DRAM (Dynamic Random Access Memory)
+CMOS</p>
+<p>non-volatile</p>
+<p>ROM (Read Only Memory)
+EEPROM (Electrically Erasable PROM)
+flash memory</p>
+<p><strong>1.3.3 Disks</strong></p>
+<p>slower, mechanical device</p>
+<ul>
+<li>
+<p>moving the arm to a <strong>cylinder</strong></p>
+</li>
+<li>
+<p>on the correct <strong>track</strong>, wait for the needed <strong>sector</strong> to rotate under the head</p>
+</li>
+<li>
+<p>reading or writing</p>
+</li>
+</ul>
+<p><strong>SSDs (Solid State Disks)</strong> do not have moving parts, do not contain platters in the shape of disks, and store data in (Flash) memory.</p>
+<p><strong>virtual memory</strong> makes it possible to run programs larger than physical memory by placing them on the disk and using main memory as a kind of cache for the most heavily executed parts. This mapping is done by a part of the CPU called the <strong>MMU (Memory Management Unit)</strong>.</p>
+<p><strong>context switch</strong>, it may be necessary to flush all modified blocks from the cache and change the mapping registers in the MMU.</p>
+<p><strong>1.3.4 I/O Devices</strong></p>
+<p>I/O devices: a controller and the device itself.</p>
+<p>controller presents a simpler (still very complex) interface to the operating system.</p>
+<p>Devices have simple interfaces, both because they cannot do much and to make them standard.</p>
+<p><strong>SATA</strong> stands for <strong>Serial ATA</strong> and <strong>ATA</strong> in turn stands for <strong>AT Attachment</strong>.</p>
+<p><strong>device driver</strong> talks to different controllers, giving them commands and accepting responses.</p>
+<p>Every controller has registers that are used to communicate with it, they forms the <strong>I/O port space</strong>.</p>
+<p>I/O in three ways</p>
+<ul>
+<li>
+<p><strong>busy waiting</strong>, issue a system call, CPU polls the device until finished.</p>
+</li>
+<li>
+<p>driver starts the device and asks it to give an <strong>interrupt</strong> when finished. Once interrupt, PC and PSW are pushed onto stack and CPU switched into kernel mode. <strong>interrupt vector</strong>, the address of the interrupt handler.</p>
+</li>
+<li>
+<p><strong>DMA (Direct Memory Access)</strong> chip, control the flow of bits between memory and some controller without constant CPU intervention.</p>
+</li>
+</ul>
+<p>Interrupts can (and often do) happen at highly inconvenient moments, for example, while another interrupt handler is running. For this reason, the CPU has a way to disable interrupts and then reenable them later. While interrupts are disabled, any devices that finish continue to assert their interrupt signals, but the CPU is not interrupted until interrupts are enabled again. If multiple devices finish while interrupts are disabled, the interrupt controller decides which one to let through first, usually based on static priorities assigned to each device. The highest-priority device wins and gets to be serviced first. The others must wait.</p>
+<p><strong>1.3.5 Buses</strong></p>
+<p>This system has many buses (e.g., cache, memory, PCIe, PCI, USB, SATA, and DMI), each with a different transfer rate and function.</p>
+<ul>
+<li>
+<p>the <strong>PCIe (Peripheral Component Interconnect Express)</strong> bus, as a successor to the <strong>PCI</strong> bus, which was a replacement for the <strong>ISA (Industry Standard Architecture)</strong> bus. A <strong>shared bus architecture</strong> means that multiple devices use the same wires to transfer data. A <strong>parallel bus architecture</strong> as used in PCI means that you send each word of data over multiple wires. PCIe uses a <strong>serial bus architecture</strong> and sends all bits in a message through a single connection.</p>
+</li>
+<li>
+<p>The <strong>USB (Universal Serial Bus)</strong> was invented to attach all the slow I/O devices to the computer. Any USB device can be connected to a computer and it will function immediately, without requiring a reboot.</p>
+</li>
+<li>
+<p>The <strong>SCSI (Small Computer System Interface)</strong> bus is a high-performance bus mainly using in servers and workstations.</p>
+</li>
+</ul>
+<p>the CPU talks to memory over a fast DDR3 bus, to an external graphics device over PCIe and to all other devices via a hub over a <strong>DMI (Direct Media Interface)</strong> bus. The hub in turn connects all the other devices, using the USB to talk to USB devices, the SATA bus to interact with hard disks and DVD drives, and PCIe to transfer Ethernet frames. We have already mentioned the older PCI devices that use a traditional PCI bus.</p>
+<p>the operating system has to know what peripheral devices are connected to the computer and configure them. What <strong>plug and play</strong> does is have the system automatically collect information about the I/O devices, centrally assign interrupt levels and I/O addresses, and then tell each card what its numbers are.</p>
+<p><strong>1.3.6 Booting the Computer</strong></p>
+<p>When the computer is booted</p>
+<ul>
+<li>
+<p>the <strong>BIOS (Basic Input Output System)</strong> checks how much RAM is installed and wether the basic devices are installed and responding. scan the PCIe and PCI buses to detect all the devices. If the devices are different from when the system was last booted, the new devices are configured.</p>
+</li>
+<li>
+<p>The BIOS then determines the boot device by trying a list of devices stored in the CMOS memory. if booting from the hard disk, the first sector from the boot device is read into memory and executed. This sector contains a program that examines the partition table to determine which partition is active. Then a boot loader is read in from that partition. This loader reads in the operating system from the active partition and starts it.</p>
+</li>
+<li>
+<p>The operating system then queries the BIOS to get the configuration information. For each device, it checks if it has the device driver. If not, it asks the user to insert a CD-ROM containing the driver or to download it from the Internet. Once it has all the device drivers, the operating system loads them into the kernel. Then it initializes its tables, creates whatever background processes are needed, and starts up a login program or GUI.</p>
+</li>
+</ul>
+<h3 id="1-4-THE-OPERATING-SYSTEM-ZOO">1.4 THE OPERATING SYSTEM ZOO</h3>
+<p><strong>1.4.1 Mainframe Operating Systems</strong></p>
+<p>differ from personal computers in terms of their I/O capacity, and they are oriented toward processing many jobs at once.</p>
+<p>They typically offer three kinds of services:</p>
+<ul>
+<li>
+<p>batch system processes jobs without interactive user.</p>
+</li>
+<li>
+<p>Transaction-processing systems handle large numbers of small requests.</p>
+</li>
+<li>
+<p>Timesharing systems allow multiple remote users to run jobs on the computer at once.</p>
+</li>
+</ul>
+<p><strong>1.4.2 Server Operating Systems</strong></p>
+<p>serve multiple users at once over a network and allow the users to share hardware and software resources. Servers can provide print service, file service, or Web service.</p>
+<p><strong>1.4.3 Multiprocessor Operating Systems</strong></p>
+<p>connect multiple CPUs into a single system. Depending on how they are connected and what is shared, these systems are called parallel computers, multicomputers, or multiprocessors.</p>
+<p><strong>1.4.4 Personal Computer Operating Systems</strong></p>
+<p>support multiprogramming, often with dozens of programs started up at boot time.</p>
+<p><strong>1.4.5 Handheld Computer Operating Systems</strong></p>
+<p>can be held in hand during operation.</p>
+<p><strong>1.4.6 Embedded Operating Systems</strong></p>
+<p>do not accept user-installed software, all the software is in ROM.</p>
+<p>such as microwave ovens, TV sets, cars, DVD recorders, traditional phones, and MP3 players.</p>
+<p><strong>1.4.7 Sensor-Node Operating Systems</strong></p>
+<p><strong>1.4.8 Real-Time Operating Systems</strong></p>
+<p><strong>1.4.9 Smart Card Operating Systems</strong></p>
+<h3 id="1-5-OPERATING-SYSTEM-CONCEPTS">1.5 OPERATING SYSTEM CONCEPTS</h3>
+<p><strong>1.5.1 Processes</strong></p>
+<p>a program in execution. a container that holds all the information needed to run a program. associate with <strong>address space</strong> and a set of resources.</p>
+<p>all the information about each process, other than the contents of its own address space, is stored in the <strong>process table</strong>.</p>
+<p>Thus, a (suspended) process consists of its address space, usually called the <strong>core image</strong>, and its process table entry, which contains the contents of its registers and many other items needed to restart the process later.</p>
+<p>A process can create one or more <strong>child processes</strong>. Processes that are cooperating to get job done need <strong>interprocess communication</strong> to communicate with one another and synchronize activities.</p>
+<p>The <strong>alarm signal</strong> causes the process to temporarily suspend whatever it was doing, save its registers on the stack, and start running a special signal-handling procedure.</p>
+<p>Each person authorized to use a system is assigned a <strong>UID</strong>. Every process started has the UID of the person who started it. A child process has the same UID as its parent. Users can be members of groups, each of which has a <strong>GID</strong>.</p>
+<p><strong>1.5.2 Address Spaces</strong></p>
+<p>main memory uses to hold executing programs. To keep multiple programs in memory at the same time from interfering with one another, protection mechanism is needed.</p>
+<p>memory-related issue</p>
+<ul>
+<li>
+<p>managing and protecting the main memory.</p>
+</li>
+<li>
+<p>managing the address space of the processes.</p>
+</li>
+</ul>
+<p>virtual memory keeps part of the address space in main memory and part on disk and shuttles pieces back and forth between them as needed. The address space is decoupled from the machine’s physical memory and may be either larger or smaller than the physical memory.</p>
+<p><strong>1.5.3 Files</strong></p>
+<p>a <strong>directory</strong> as a way of grouping files together.</p>
+<p>the file system: create and remove directories, put an existing file in a directory and remove a file from a directory, directory entries may be either files or other directories.</p>
+<p>Compared with process hierarchies: deeper, long-lived, can be read by a wider group.</p>
+<p>Every file can be specified by giving its <strong>path name</strong> from the <strong>root directory</strong>. Each process has a current <strong>working directory</strong>, in which path names not beginning with a slash are looked for.</p>
+<p>If the file access is permitted, the system returns a <strong>file descriptor</strong>. If not, an error code is returned.</p>
+<p>the mounted file system: the file system that cannot be used on the CD-ROM must be attached to the <strong>root file system</strong>, because UNIX does not allow path names to be prefixed by a drive name or number.</p>
+<p><strong>Special files</strong> are provided in order to make I/O devices look like files.</p>
+<ul>
+<li>
+<p><strong>block special files</strong> are used to model devices that consist of randomly addressable blocks.</p>
+</li>
+<li>
+<p><strong>character special files</strong> are used to model devices that accept or output a character stream.</p>
+</li>
+</ul>
+<p>A <strong>pipe</strong> is a sort of pseudo file that can be used to connect two processes. Thus, communication between processes looks very much like ordinary file reads and writes.</p>
+<p><strong>1.5.4 Input/Output</strong></p>
+<p>Every operating system has an I/O subsystem for managing its I/O devices.</p>
+<ul>
+<li>
+<p>Some of the I/O software is device independent, applies to many or all I/O devices equally well.</p>
+</li>
+<li>
+<p>Other parts of it, such as device drivers, are specific to particular I/O devices.</p>
+</li>
+</ul>
+<p><strong>1.5.5 Protection</strong></p>
+<p>As an example, Files in UNIX are protected by assigning each one a 9-bit binary protection code. The protection code consists of three 3-bit fields, one for the owner, one for other members of the owner’s group, and one for everyone else. Each field has a bit for <strong>r</strong>ead access, a bit for <strong>w</strong>rite access, and a bit for e<strong>x</strong>ecute access. These 3 bits are known as the <strong>rwx bits</strong>, such as <em>rwxr-x–x</em>. For a directory, <em>x</em> indicates search permission. A dash means that the corresponding permission is absent.</p>
+<p><strong>1.5.6 The Shell</strong></p>
+<p>When logs in, a shell is started up. The shell has the terminal as standard input and standard output. It starts out by typing the prompt, a character such as a dollar sign, which tells the user that the shell is waiting to accept a command.</p>
+<p><strong>1.5.7 Ontogeny Recapitulates Phylogeny</strong></p>
+<p>Large Memories, Protection Hardware, Disks, Virtual Memory</p>
+<p>Ideas invented in one context and later thrown out when the context changes (assembly-language programming, monoprogramming, single-level directories, etc.) only to reappear in a different context often a decade later.</p>
+<h3 id="1-6-SYSTEM-CALLS">1.6 SYSTEM CALLS</h3>
+<p>Making a system call is like making a special kind of procedure call, only system calls enter the kernel and procedure calls do not.</p>
+<p><strong>1.6.1 System Calls for Process Management</strong></p>
+<p>Fork is the only way to create a new process in POSIX. The fork call returns a value, which is zero in the child and equal to the child’s <strong>PID (Process IDentifier)</strong> in the parent.</p>
+<p>To wait for the child to finish, the parent executes a waitpid system call, which just waits until the child terminates. Waitpid can wait for a specific child, or for any old child by setting the first parameter to −1.</p>
+<p>Execve has three parameters: the name of the file to be executed, a pointer to the argument array, and a pointer to the environment array.</p>
+<p>Exit, which processes should use when they are finished executing, has one parameter, the exit status (0 to 255), which is returned to the parent via statloc in the waitpid system call.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> TRUE 1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (TRUE) &#123;                          <span class="comment">/* repeat forever */</span></span><br><span class="line">    type_prompt();                      <span class="comment">/* display prompt on the screen */</span></span><br><span class="line">    read_command(command, parameters);  <span class="comment">/* read input from terminal */</span></span><br><span class="line">    <span class="keyword">if</span> (fork() != <span class="number">0</span>) &#123;                  <span class="comment">/* fork off child process */</span></span><br><span class="line">        <span class="comment">/* Parent code. */</span></span><br><span class="line">        waitpid(−<span class="number">1</span>, &amp;status, <span class="number">0</span>);        <span class="comment">/* wait for child to exit */</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">/* Child code. */</span></span><br><span class="line">        execve(command, parameters, <span class="number">0</span>); <span class="comment">/* execute command */</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Consider the case of a command such as</p>
+<p>cp file1 file2</p>
+<p>used to copy <em>file1</em> to <em>file2</em>. After the shell has forked, the child process locates and executes the file <em>cp</em> and passes to it the names of the source and target files.</p>
+<p>main(argc, argv, envp)</p>
+<ul>
+<li>
+<p><em>argc</em> is a count of the number of items on the command line, including the program name.</p>
+</li>
+<li>
+<p><em>argv</em> is a pointer to an array. Element i of that array is a pointer to the ith string on the command line.</p>
+</li>
+<li>
+<p><em>envp</em> is a pointer to the environment, an array of strings containing assignments of the form <em>name = value</em> used to pass information.</p>
+</li>
+</ul>
+<p>Processes in UNIX have their memory divided up into three segments: the <strong>text segment</strong> (i.e., the program code), the <strong>data segment</strong> (i.e., the variables), and the <strong>stack segment</strong>.</p>
+<p><strong>1.6.2 System Calls for File Management</strong></p>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/posts/20210216/080bf855c5c6/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/posts/20200316/ab11e3f945a9/>http://example.com/posts/20200316/ab11e3f945a9/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-21T00:21:17+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年3月21日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/20210216/f2d40f53ead3/">
-        Machine Learning
-      </a>
-    </h2>
-  
-  <div class='md'>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E9%98%85%E8%AF%BB/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>阅读</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        https://github.com/apachecn/AiLearning
-一、 Introduction
-1.1 Welcome
-Machine Learning
-
-Grew out of work in AI
-New capability for computers
-
-Examples:
-
-Database mining
-Applications can’t program by ha...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20200316/ab11e3f945a9/&title=现代操作系统 - Cream & Forrest&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20200316/ab11e3f945a9/&title=现代操作系统 - Cream & Forrest&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20200316/ab11e3f945a9/&title=现代操作系统 - Cream & Forrest&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-02-16</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Machine-Learning/">Machine Learning</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/posts/20210216/f2d40f53ead3/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/20210216/fd22a591b85a/">
-        Hexo + GitHub Pages 搭建个人博客
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        1. 搭建
-Hexo + Volantis 主题 + Github Pages
-1.1 资源 cdn 加速
-对于本地的 css js images 等资源文件，引入时可以用 CDN 加速，例如托管于 GitHub 下的 /css/font-awesome.min.css 可替换成 https://cdn.jsdelivr.net/gh/用户名/仓库名/css/font-awesome.min...
-      
-    
+    </div>
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-02-16</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/posts/20210216/fd22a591b85a/'>
-            阅读全文
-          </a>
-        </div>
+      
+        <a class='prev' href='/posts/20200729/c315c46a42d2/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>高等数学</p>
+          <p class='content'>1. 函数、极限、连续
+1.1 函数
+例题
+求 $y=\ln \left(x+\sqrt{1+x^{2}}\right)$ 的反函数
+1.2 极限性质
+极限基本性质
+
+唯一性
+有界性
+保号性
+
+...</p>
+        </a>
+      
+      
+      
+        <a class='next' href='/posts/20200131/c0c8d9cbe21b/'>
+          <p class='title'>数据库系统概论<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>范式
+第一范式 (1NF)
+第二范式 (2NF)
+第三范式 (3NF)
+巴斯范式（BCNF）
+</p>
+        </a>
       
     </div>
   
+</article>
 
-</div>
 
-          </div>
-        
-      
-    
-  </section>
   
-    
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/archives/2021/page/2/">
-            <section class="post prev white-box shadow" >
-              <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          3 / 3
-        </p>
-        
-      </div>
-    
+
   
 
 
-	
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -895,131 +1159,28 @@ Hexo + Volantis 主题 + Github Pages
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Cream & Forrest</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Machine-Learning/" href="/categories/Machine-Learning/"
-            id="categoriesMachine-Learning"
-            ><div class='name'>Machine Learning</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%8D%9A%E5%AE%A2/" href="/categories/%E5%8D%9A%E5%AE%A2/"
-            id="categoriesE58D9AE5AEA2"
-            ><div class='name'>博客</div><div class='badge'>(10)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-INTRODUCTION"><span class="toc-text">1 INTRODUCTION</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-WHAT-IS-AN-OPERATING-SYSTEM"><span class="toc-text">1.1 WHAT IS AN OPERATING SYSTEM?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-HISTORY-OF-OPERATING-SYSTEMS"><span class="toc-text">1.2 HISTORY OF OPERATING SYSTEMS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-COMPUTER-HARDWARE-REVIEW"><span class="toc-text">1.3 COMPUTER HARDWARE REVIEW</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-THE-OPERATING-SYSTEM-ZOO"><span class="toc-text">1.4 THE OPERATING SYSTEM ZOO</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-OPERATING-SYSTEM-CONCEPTS"><span class="toc-text">1.5 OPERATING SYSTEM CONCEPTS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-6-SYSTEM-CALLS"><span class="toc-text">1.6 SYSTEM CALLS</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Git/" style="font-size: 19px; color: #777">Git</a> <a href="/tags/GitHub/" style="font-size: 19px; color: #777">GitHub</a> <a href="/tags/Pjax/" style="font-size: 14px; color: #999">Pjax</a> <a href="/tags/Vscode/" style="font-size: 14px; color: #999">Vscode</a> <a href="/tags/%E5%A4%A7%E5%AD%A6/" style="font-size: 24px; color: #555">大学</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 14px; color: #999">爬虫</a> <a href="/tags/%E8%80%83%E7%A0%94/" style="font-size: 19px; color: #777">考研</a> <a href="/tags/%E9%98%85%E8%AF%BB/" style="font-size: 14px; color: #999">阅读</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
 		  
@@ -1028,21 +1189,21 @@ Hexo + Volantis 主题 + Github Pages
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="现代操作系统";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
