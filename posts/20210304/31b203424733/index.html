@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -25,7 +23,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：大学 - Cream &amp; Forrest</title>
+  <title>本科毕业设计 - Cream &amp; Forrest</title>
   
 
   
@@ -626,7 +624,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -701,300 +699,298 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
+    
+      <h1 class="title">
+        本科毕业设计
+      </h1>
+      <div class='new-meta-box'>
         
-        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
           
         
           
-        
+            
+
           
         
           
-        
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年3月4日</p>
+  </a>
+</div>
+
           
         
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
       
-    
-    
-      
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/20201026/cae624b298f8/">
-        概率论
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        1. 事件与概率
-1.1 概率
-容斥原理 $P(A \cup B)=P(A)+P(B)-P(AB)$
-古典概型 $\displaystyle P_n^m=\frac{n!}{(n-m)!}$，$\displaystyle C_n^m=\frac{n!}{m!(n-m)!}$
-条件概率 $\displaystyle P(B \mid A)=\frac{P(A B)}{P(A)}$
-全概率 $\...
-      
-    
+      <div id="lc-pv" data-title="本科毕业设计" data-path="/posts/20210304/31b203424733/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-10-26</time>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h2 id="1-Core">1. Core</h2>
+<h3 id="1-1-PCA">1.1 PCA</h3>
+<p>无监督学习
+降维
+变异性
+LDA 监督</p>
+<h3 id="1-2-SVM">1.2 SVM</h3>
+<h3 id="1-3-Logistic">1.3 Logistic</h3>
+<h2 id="x-系统结构">x. 系统结构</h2>
+<h3 id="系统角色">系统角色</h3>
+<ul>
+<li>学生</li>
+<li>教秘</li>
+<li>管理员</li>
+</ul>
+<h2 id="2-Client">2. Client</h2>
+<h3 id="2-1-用户登录界面">2.1 用户登录界面</h3>
+<p>初始化为学号+密码</p>
+<p>初次登陆设置个人信息</p>
+<p>申请使用个人信息，所以必须完善</p>
+<h3 id="2-2-用户主界面">2.2 用户主界面</h3>
+<ol>
+<li>详情链接</li>
+<li>个人数据展示
+<ol>
+<li>是否符合课程的要求</li>
+<li>面试结果</li>
+</ol>
+</li>
+<li>转入、转出</li>
+</ol>
+<h3 id="2-3-转专业流程">2.3 转专业流程</h3>
+<p>学生填写申请
+转出学院同意
+转入学院同意1
+学生参加考核
+转入学院公布成绩</p>
+<h2 id="3-Server">3. Server</h2>
+<h3 id="3-1-Database">3.1 Database</h3>
+<p><strong>Table</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 学院表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_college (</span><br><span class="line">  id <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">primary</span> key,  <span class="comment">-- 学院代码</span></span><br><span class="line">  name <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="keyword">null</span>   <span class="comment">-- 学院名称</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 专业表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_major (</span><br><span class="line">  id <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">not</span> <span class="keyword">null</span>,       <span class="comment">-- 专业代码</span></span><br><span class="line">  name <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="keyword">null</span>,    <span class="comment">-- 专业名称</span></span><br><span class="line">  college <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">not</span> <span class="keyword">null</span>,  <span class="comment">-- 学院代码</span></span><br><span class="line">  <span class="keyword">primary</span> key (id, college),</span><br><span class="line">  <span class="keyword">foreign</span> key (college) <span class="keyword">references</span> tb_college(id) <span class="comment">-- 注释</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 学生表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_student (</span><br><span class="line">  username <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">primary</span> key, <span class="comment">-- 学号</span></span><br><span class="line">  password <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="keyword">null</span>,    <span class="comment">-- 密码</span></span><br><span class="line">  name <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="keyword">null</span>,        <span class="comment">-- 姓名</span></span><br><span class="line">  gender tinyint(<span class="number">1</span>) <span class="keyword">null</span>,           <span class="comment">-- 性别</span></span><br><span class="line">  phone <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">null</span>,           <span class="comment">-- 电话</span></span><br><span class="line">  grade <span class="keyword">year</span> <span class="keyword">null</span>,                  <span class="comment">-- 年级</span></span><br><span class="line">  major <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">null</span>,            <span class="comment">-- 专业代码</span></span><br><span class="line">  valid tinyint(<span class="number">1</span>) <span class="keyword">not</span> <span class="keyword">null</span> <span class="keyword">default</span> <span class="number">0</span>,  <span class="comment">-- 账号状态</span></span><br><span class="line">  <span class="keyword">foreign</span> key (major) <span class="keyword">references</span> tb_major(id) <span class="comment">-- 注释</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 教工表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_teacher (</span><br><span class="line">  username <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">primary</span> key, <span class="comment">-- 教工号</span></span><br><span class="line">  password <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="keyword">null</span>,    <span class="comment">-- 密码</span></span><br><span class="line">  name <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="keyword">null</span>,        <span class="comment">-- 姓名</span></span><br><span class="line">  gender tinyint(<span class="number">1</span>) <span class="keyword">not</span> <span class="keyword">null</span>,       <span class="comment">-- 性别</span></span><br><span class="line">  phone <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="keyword">null</span>        <span class="comment">-- 电话</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 课程表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_course (</span><br><span class="line">  id <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">primary</span> key,  <span class="comment">-- 课程代码</span></span><br><span class="line">  name <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="keyword">null</span>   <span class="comment">-- 课程名</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 公告表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_notice (</span><br><span class="line">  id <span class="type">int</span> auto_increment <span class="keyword">primary</span> key,  <span class="comment">-- ID</span></span><br><span class="line">  title <span class="type">varchar</span>(<span class="number">20</span>) <span class="keyword">not</span> <span class="keyword">null</span>,         <span class="comment">-- 标题</span></span><br><span class="line">  content <span class="type">varchar</span>(<span class="number">255</span>) <span class="keyword">not</span> <span class="keyword">null</span>,      <span class="comment">-- 内容</span></span><br><span class="line">  update_time <span class="type">timestamp</span> <span class="keyword">not</span> <span class="keyword">null</span>,     <span class="comment">-- 更新时间</span></span><br><span class="line">  publisher <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="keyword">null</span>,     <span class="comment">-- 教工号</span></span><br><span class="line">  valid tinyint(<span class="number">1</span>) <span class="keyword">not</span> <span class="keyword">null</span>,          <span class="comment">-- 是否有效</span></span><br><span class="line">  <span class="keyword">foreign</span> key (publisher) <span class="keyword">references</span> tb_teacher(id) <span class="comment">-- 注释</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 修读表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_exam (</span><br><span class="line">  student_id <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="keyword">null</span>,  <span class="comment">-- 学号</span></span><br><span class="line">  course_id <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">not</span> <span class="keyword">null</span>,    <span class="comment">-- 课程代码</span></span><br><span class="line">  score <span class="type">int</span> <span class="keyword">null</span>,                   <span class="comment">-- 成绩</span></span><br><span class="line">  <span class="keyword">primary</span> key (student_id, course_id),</span><br><span class="line">  <span class="keyword">foreign</span> key (student_id) <span class="keyword">references</span> tb_student(id), <span class="comment">-- 注释</span></span><br><span class="line">  <span class="keyword">foreign</span> key (course_id) <span class="keyword">references</span> tb_course(id)    <span class="comment">-- 注释</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 专业课程联系</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_major_course (</span><br><span class="line">  major_id <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">not</span> <span class="keyword">null</span>,  <span class="comment">-- 专业代码</span></span><br><span class="line">  course_id <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">not</span> <span class="keyword">null</span>, <span class="comment">-- 课程代码</span></span><br><span class="line">  <span class="keyword">primary</span> key (major_id, course_id)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 申请状态表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_application_state (</span><br><span class="line">  id <span class="type">int</span> <span class="keyword">primary</span> key,       <span class="comment">-- 状态ID</span></span><br><span class="line">  info <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">not</span> <span class="keyword">null</span> <span class="comment">-- 状态信息</span></span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 申请表</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> tb_transfer_application (</span><br><span class="line">  student_id <span class="type">varchar</span>(<span class="number">16</span>) <span class="keyword">primary</span> key,   <span class="comment">-- 学号</span></span><br><span class="line">  in_major <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">not</span> <span class="keyword">null</span>,         <span class="comment">-- 转入专业ID</span></span><br><span class="line">  out_major <span class="type">varchar</span>(<span class="number">8</span>) <span class="keyword">not</span> <span class="keyword">null</span>,        <span class="comment">-- 转出专业ID</span></span><br><span class="line">  in_grade <span class="keyword">year</span> <span class="keyword">not</span> <span class="keyword">null</span>,               <span class="comment">-- 转入年级</span></span><br><span class="line">  out_grade <span class="keyword">year</span> <span class="keyword">not</span> <span class="keyword">null</span>,              <span class="comment">-- 转出年级</span></span><br><span class="line">  reason <span class="type">varchar</span>(<span class="number">300</span>) <span class="keyword">not</span> <span class="keyword">null</span>,         <span class="comment">-- 申请理由</span></span><br><span class="line">  state <span class="type">int</span> <span class="keyword">not</span> <span class="keyword">null</span>,                   <span class="comment">-- 申请状态</span></span><br><span class="line">  update_time <span class="type">timestamp</span> <span class="keyword">not</span> <span class="keyword">null</span>,       <span class="comment">-- 更新时间</span></span><br><span class="line">  application_type tinyint(<span class="number">1</span>) <span class="keyword">not</span> <span class="keyword">null</span>, <span class="comment">-- 申请类别</span></span><br><span class="line">  review_comment <span class="type">varchar</span>(<span class="number">200</span>) <span class="keyword">null</span>,     <span class="comment">-- 审核意见</span></span><br><span class="line">  <span class="keyword">foreign</span> key (state) <span class="keyword">references</span> tb_application_state(id) <span class="comment">-- 注释</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p><strong>View</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 专业</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">view</span> vi_major <span class="keyword">as</span></span><br><span class="line"><span class="keyword">SELECT</span> a.id <span class="keyword">as</span> major_id, b.id <span class="keyword">as</span> college_id, a.name <span class="keyword">as</span> major, b.name <span class="keyword">as</span> college <span class="keyword">from</span> tb_major <span class="keyword">as</span> a</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> tb_college <span class="keyword">as</span> b <span class="keyword">on</span> a.college<span class="operator">=</span>b.id;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- 学生</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> vi_student <span class="keyword">as</span></span><br><span class="line"><span class="keyword">SELECT</span> username, a.name, gender, phone, grade, b.major_id, b.college_id, b.major, b.college, a.valid</span><br><span class="line"><span class="keyword">FROM</span> tb_student <span class="keyword">as</span> a</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> vi_major <span class="keyword">as</span> b <span class="keyword">on</span> a.major<span class="operator">=</span>b.major_id;</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 申请</span></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">VIEW</span> vi_application <span class="keyword">AS</span></span><br><span class="line"><span class="keyword">SELECT</span> student_id, e.name <span class="keyword">as</span> <span class="string">&#x27;student_name&#x27;</span>, e.gender <span class="keyword">as</span> <span class="string">&#x27;student_gender&#x27;</span>,</span><br><span class="line">e.phone <span class="keyword">as</span> <span class="string">&#x27;student_phone&#x27;</span>, in_major <span class="keyword">as</span> in_major_id, out_major <span class="keyword">as</span> out_major_id,</span><br><span class="line">in_grade, out_grade, reason, b.info <span class="keyword">as</span> state, update_time, application_type, review_comment,</span><br><span class="line">c.college_id <span class="keyword">as</span> <span class="string">&#x27;in_college_id&#x27;</span>, c.major <span class="keyword">as</span> <span class="string">&#x27;in_major&#x27;</span>, c.college <span class="keyword">as</span> <span class="string">&#x27;in_college&#x27;</span>,</span><br><span class="line">d.college_id <span class="keyword">as</span> <span class="string">&#x27;out_college_id&#x27;</span>, d.major <span class="keyword">as</span> <span class="string">&#x27;out_major&#x27;</span>, d.college <span class="keyword">as</span> <span class="string">&#x27;out_college&#x27;</span></span><br><span class="line"><span class="keyword">FROM</span> tb_transfer_application <span class="keyword">as</span> a</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> tb_application_state <span class="keyword">as</span> b <span class="keyword">on</span> b.id<span class="operator">=</span>a.state</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> vi_major <span class="keyword">as</span> c <span class="keyword">on</span> c.major_id<span class="operator">=</span>a.in_major</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> vi_major <span class="keyword">as</span> d <span class="keyword">on</span> d.major_id<span class="operator">=</span>a.out_major</span><br><span class="line"><span class="keyword">LEFT</span> <span class="keyword">JOIN</span> tb_student <span class="keyword">as</span> e <span class="keyword">on</span> e.username<span class="operator">=</span>a.student_id;</span><br></pre></td></tr></table></figure>
+<p><strong>Trigger</strong></p>
+<p><strong>Index</strong></p>
+<h3 id="3-2-SQL">3.2 SQL</h3>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 用户</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tb_student <span class="keyword">values</span></span><br><span class="line">(<span class="string">&#x27;001&#x27;</span>,<span class="string">&#x27;123&#x27;</span>,<span class="string">&#x27;测试学生1&#x27;</span>,<span class="number">0</span>,<span class="string">&#x27;12345678900&#x27;</span>,<span class="number">2017</span>,<span class="string">&#x27;080904&#x27;</span>,<span class="number">1</span>),</span><br><span class="line">(<span class="string">&#x27;002&#x27;</span>,<span class="string">&#x27;123&#x27;</span>,<span class="string">&#x27;测试学生2&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;98765432100&#x27;</span>,<span class="number">2018</span>,<span class="string">&#x27;080901&#x27;</span>,<span class="number">1</span>),</span><br><span class="line">(<span class="string">&#x27;003&#x27;</span>,<span class="string">&#x27;123&#x27;</span>,<span class="string">&#x27;测试学生3&#x27;</span>,<span class="number">0</span>,<span class="string">&#x27;02587413695&#x27;</span>,<span class="number">2019</span>,<span class="string">&#x27;080703&#x27;</span>,<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tb_teacher <span class="keyword">values</span></span><br><span class="line">(<span class="string">&#x27;001&#x27;</span>,<span class="string">&#x27;123&#x27;</span>,<span class="string">&#x27;测试教师1&#x27;</span>,<span class="number">0</span>,<span class="string">&#x27;78536954120&#x27;</span>),</span><br><span class="line">(<span class="string">&#x27;002&#x27;</span>,<span class="string">&#x27;123&#x27;</span>,<span class="string">&#x27;测试教师2&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;36985234712&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tb_college <span class="keyword">values</span></span><br><span class="line">(<span class="string">&#x27;0809&#x27;</span>,<span class="string">&#x27;计算机科学与信息工程学院/软件学院&#x27;</span>),</span><br><span class="line">(<span class="string">&#x27;0807&#x27;</span>,<span class="string">&#x27;电子信息学院&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tb_major <span class="keyword">values</span></span><br><span class="line">(<span class="string">&#x27;080901&#x27;</span>,<span class="string">&#x27;计算机科学与技术&#x27;</span>,<span class="string">&#x27;0809&#x27;</span>),</span><br><span class="line">(<span class="string">&#x27;080902&#x27;</span>,<span class="string">&#x27;软件工程&#x27;</span>,<span class="string">&#x27;0809&#x27;</span>),</span><br><span class="line">(<span class="string">&#x27;080904&#x27;</span>,<span class="string">&#x27;信息安全&#x27;</span>,<span class="string">&#x27;0809&#x27;</span>),</span><br><span class="line">(<span class="string">&#x27;080701&#x27;</span>,<span class="string">&#x27;电子信息工程&#x27;</span>,<span class="string">&#x27;0807&#x27;</span>),</span><br><span class="line">(<span class="string">&#x27;080703&#x27;</span>,<span class="string">&#x27;通信工程&#x27;</span>,<span class="string">&#x27;0807&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">-- 顺序不能变，使审核通过时 state+2</span></span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> tb_application_state <span class="keyword">values</span></span><br><span class="line">(<span class="number">1</span>, <span class="string">&#x27;待审核&#x27;</span>),</span><br><span class="line">(<span class="number">2</span>, <span class="string">&#x27;审核未通过&#x27;</span>),</span><br><span class="line">(<span class="number">3</span>, <span class="string">&#x27;审核通过&#x27;</span>),</span><br><span class="line">(<span class="number">4</span>, <span class="string">&#x27;考核未通过&#x27;</span>),</span><br><span class="line">(<span class="number">5</span>, <span class="string">&#x27;考核通过&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="3-2-Api">3.2 Api</h3>
+<p><strong>学生端</strong></p>
+<ul>
+<li>登录</li>
+</ul>
+<p><strong>教秘端</strong></p>
+<ul>
+<li>登录</li>
+</ul>
+<p><strong>系统端</strong></p>
+<ul>
+<li>修改申请</li>
+</ul>
+<p><strong>学生端问题</strong></p>
+<p>主界面（系统介绍，须知）</p>
+<p>历史申请记录（表格）</p>
+<p>填写申请
+填表，上传材料（保存，提交）
+等待审批进度
+公告</p>
+<p>申请成功，请提交相关材料
+您有未结束的申请，不能重复提交
+一旦提交，不能修改</p>
+<h2 id="4-进度报告">4. 进度报告</h2>
+<h3 id="4-1-进度">4.1 进度</h3>
+<p><strong>进度报告</strong></p>
+<ul>
+<li>完善开题报告，绘制系统的ER图和DFD。</li>
+<li>查阅PCA、SVM资料，知道PCA用于提取特征量来展现数据的变异性，SVM主要用于数据分类；了解到PCA-Logistic模型可能比PCA-SVM模型效果更好；较小的数据集PCA做的分类正确率可能比原始数据低，之后深入研究算法也许可以做出优化。</li>
+<li>搜索Python实现PCA-Logistic模型的代码，打算使用scikit-learn库进行数据训练和模拟测试。</li>
+<li>之后继续学习pca相关模型，10月开始设计数据库字段和数据的交互逻辑，pca模型的初步实现。</li>
+</ul>
+<p><strong>关于ER图和系统数据库的疑问</strong></p>
+<ul>
+<li>转专业申请表，学生需要填写哪些数据，其他证明材料可否作为附件上传？</li>
+<li>学生以往成绩，能从已有的数据（如教务系统）获取吗？</li>
+<li>学生对本专业的认知和兴趣动机，通过非开放式的调查问卷填写（如“是否对本专业的培养计划有所了解【非常了解#基本了解#不了解】”）是否可行</li>
+<li>3位教师对考核的评分是统计后由教务秘书录入还是老师们各自录入？</li>
+<li>能否获取往年转专业学生的样本数据</li>
+</ul>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/posts/20201026/cae624b298f8/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/posts/20210304/31b203424733/>http://example.com/posts/20210304/31b203424733/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-04T09:12:47+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年3月4日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/20200922/3ab98f4756c1/">
-        数据结构
-      </a>
-    </h2>
-  
-  <div class='md'>
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        1. C语言
-1.1 指针 &amp; 引用
-123int n = 1;int *p = &amp;n;  // 指针int &amp;a = n;   // 引用
-1typedef int *ptrInt;
-1.2 运算符优先级
-
-数组访问、结构体访问、后缀自增
-前缀自增、非、取地址、解引用（从右到左）
-乘除摸加减、左移右移
-关系、位、逻辑
-三元条件、赋值（从右到左）
-逗号
-
-例题
-12i...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20210304/31b203424733/&title=本科毕业设计 - Cream & Forrest&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20210304/31b203424733/&title=本科毕业设计 - Cream & Forrest&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20210304/31b203424733/&title=本科毕业设计 - Cream & Forrest&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-09-22</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/posts/20200922/3ab98f4756c1/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/20200915/0fb879921c2f/">
-        概率论
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        1. 行列式
-
-行列式是一个数，它是不同行不同列元素乘积的代数和
-
-1.1 n 阶行列式
-规定 $\tau(j_1j_2\cdots j_n)$ 为逆序数
-$$|A|=\sum_{j_1j_2\cdots j_n}(-1)^{\tau(j_1j_2\cdots j_n)}a_{1j_1}a_{2j_2}a_{3j_3}\cdots a_{nj_n}$$
-仅三阶行列式 = 主对角减副对角
-$$...
-      
-    
+    </div>
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-09-15</time>
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/posts/20200915/0fb879921c2f/'>
-            阅读全文
-          </a>
-        </div>
+      
+        <a class='prev' href='/posts/20210306/b35cb32b46a9/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>计算机网络 (第7版)</p>
+          <p class='content'>谢希仁 编著
+    
+</p>
+        </a>
+      
+      
+      
+        <a class='next' href='/posts/20210304/9c684d723659/'>
+          <p class='title'>考研复试准备：英语口语<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>个人介绍
+苏苏篇
+Dear professors, I’m so glad to meet all of you here. My name is Su Linlin, 22 years old...</p>
+        </a>
       
     </div>
   
+</article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/20200729/c315c46a42d2/">
-        高等数学
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        1. 函数、极限、连续
-1.1 函数
-例题
-求 $y=\ln \left(x+\sqrt{1+x^{2}}\right)$ 的反函数
-1.2 极限性质
-极限基本性质
-
-唯一性
-有界性
-保号性
-
-$\lim_{x\to a}f(x)&gt;0$，则去心邻域内 $f(x)&gt;0$
-$f(x)\ge0$，则 $\lim f(x)\ge0$
-$f(x)\ge g(x)$，则 $\lim f(x)...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-07-29</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/posts/20200729/c315c46a42d2/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
   
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/20200131/c0c8d9cbe21b/">
-        数据库系统概论
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        范式
-第一范式 (1NF)
-第二范式 (2NF)
-第三范式 (3NF)
-巴斯范式（BCNF）
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-01-31</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/posts/20200131/c0c8d9cbe21b/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
   
 
 
-    
-  
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -1002,131 +998,28 @@ $f(x)\ge g(x)$，则 $\lim f(x)...
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Cream & Forrest</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Machine-Learning/" href="/categories/Machine-Learning/"
-            id="categoriesMachine-Learning"
-            ><div class='name'>Machine Learning</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%8D%9A%E5%AE%A2/" href="/categories/%E5%8D%9A%E5%AE%A2/"
-            id="categoriesE58D9AE5AEA2"
-            ><div class='name'>博客</div><div class='badge'>(10)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Core"><span class="toc-text">1. Core</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-PCA"><span class="toc-text">1.1 PCA</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-SVM"><span class="toc-text">1.2 SVM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-Logistic"><span class="toc-text">1.3 Logistic</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#x-%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84"><span class="toc-text">x. 系统结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E8%A7%92%E8%89%B2"><span class="toc-text">系统角色</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Client"><span class="toc-text">2. Client</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2"><span class="toc-text">2.1 用户登录界面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E7%94%A8%E6%88%B7%E4%B8%BB%E7%95%8C%E9%9D%A2"><span class="toc-text">2.2 用户主界面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E8%BD%AC%E4%B8%93%E4%B8%9A%E6%B5%81%E7%A8%8B"><span class="toc-text">2.3 转专业流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-Server"><span class="toc-text">3. Server</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-Database"><span class="toc-text">3.1 Database</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-SQL"><span class="toc-text">3.2 SQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-Api"><span class="toc-text">3.2 Api</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E8%BF%9B%E5%BA%A6%E6%8A%A5%E5%91%8A"><span class="toc-text">4. 进度报告</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E8%BF%9B%E5%BA%A6"><span class="toc-text">4.1 进度</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Git/" style="font-size: 19px; color: #777">Git</a> <a href="/tags/GitHub/" style="font-size: 19px; color: #777">GitHub</a> <a href="/tags/Pjax/" style="font-size: 14px; color: #999">Pjax</a> <a href="/tags/Vscode/" style="font-size: 14px; color: #999">Vscode</a> <a href="/tags/%E5%A4%A7%E5%AD%A6/" style="font-size: 24px; color: #555">大学</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 14px; color: #999">爬虫</a> <a href="/tags/%E8%80%83%E7%A0%94/" style="font-size: 19px; color: #777">考研</a> <a href="/tags/%E9%98%85%E8%AF%BB/" style="font-size: 14px; color: #999">阅读</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
 		  
@@ -1135,8 +1028,8 @@ $f(x)\ge g(x)$，则 $\lim f(x)...
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="本科毕业设计";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

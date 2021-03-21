@@ -23,9 +23,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>数据结构 - Cream &amp; Forrest</title>
-  
-    <meta name="keywords" content="大学">
+  <title>计算机网络 (第7版) - Cream &amp; Forrest</title>
   
 
   
@@ -712,7 +710,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title">
-        数据结构
+        计算机网络 (第7版)
       </h1>
       <div class='new-meta-box'>
         
@@ -736,7 +734,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年9月22日</p>
+    <p>发布于：2021年3月6日</p>
   </a>
 </div>
 
@@ -747,7 +745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="数据结构" data-path="/posts/20200922/3ab98f4756c1/">
+      <div id="lc-pv" data-title="计算机网络 (第7版)" data-path="/posts/20210306/b35cb32b46a9/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -765,473 +763,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
-  <h2 id="1-C语言">1. C语言</h2>
-<h3 id="1-1-指针-引用">1.1 指针 &amp; 引用</h3>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> n = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> *p = &amp;n;  <span class="comment">// 指针</span></span><br><span class="line"><span class="keyword">int</span> &amp;a = n;   <span class="comment">// 引用</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> *ptrInt;</span><br></pre></td></tr></table></figure>
-<h3 id="1-2-运算符优先级">1.2 运算符优先级</h3>
-<ol>
-<li>数组访问、结构体访问、后缀自增</li>
-<li>前缀自增、非、取地址、解引用（从右到左）</li>
-<li>乘除摸加减、左移右移</li>
-<li>关系、位、逻辑</li>
-<li>三元条件、赋值（从右到左）</li>
-<li>逗号</li>
-</ol>
-<p><strong>例题</strong></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">3</span>, b = <span class="number">2</span>, c = <span class="number">5</span>, d = <span class="number">4</span>, x = <span class="number">0</span>, y = <span class="number">0</span>;</span><br><span class="line">(x = a &gt; b) || (y = c &gt; d); <span class="comment">// x,y = 1,0</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[] = &#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> *p = a;</span><br><span class="line"><span class="keyword">int</span> b = *p++, c = *p; <span class="comment">// b,c = 2,4</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>, b = <span class="number">2</span>, c;</span><br><span class="line">c = ++b = a++;  <span class="comment">// a,b,c = 2,1,1</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">5</span>, b = <span class="number">10</span>;</span><br><span class="line">a *= <span class="number">1</span> &amp; <span class="number">2</span> &gt; <span class="number">1</span> &amp;&amp; (b = <span class="number">0</span>) ? <span class="literal">true</span> : <span class="literal">false</span>; <span class="comment">// a,b = 0,0</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c = (a = <span class="number">6</span>, b = a--); <span class="comment">// a,b,c = 5,6,6</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">5</span>, b = <span class="number">4</span>, c;</span><br><span class="line">c = b++ &amp;&amp; a == b;  <span class="comment">// a,b,c = 5,5,1</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-绪论">2. 绪论</h2>
-<h3 id="2-1-数据结构">2.1 数据结构</h3>
-<ul>
-<li>逻辑结构
-<ul>
-<li>线性结构
-<ul>
-<li>线性表</li>
-<li>栈和队列</li>
-<li>字符串</li>
-</ul>
-</li>
-<li>非线性结构
-<ul>
-<li>集合结构</li>
-<li>树结构</li>
-<li>图结构（网状结构）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>物理结构（存储结构）
-<ul>
-<li>顺序存储结构</li>
-<li>链式存储结构</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-2-算法">2.2 算法</h3>
-<ul>
-<li>特性：有穷性、确定性、可行性、输入、输出</li>
-<li>评价标准：正确性、可读性、健壮性、高效性</li>
-<li>效率度量：时间复杂度、空间复杂度</li>
-</ul>
-<p><strong>时间复杂度的计算</strong></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">90</span>, y = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">while</span> (y &gt; <span class="number">0</span>)</span><br><span class="line">  <span class="keyword">if</span> (x &gt; <span class="number">100</span>) x -= <span class="number">10</span>, y--;</span><br><span class="line">  <span class="keyword">else</span> x++;</span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; n; i++)</span><br><span class="line">  <span class="keyword">for</span> (j = <span class="number">1</span>; j &lt;= n - i; j++)</span><br><span class="line">    x++;</span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span> (i &lt;= n)</span><br><span class="line">  i *= <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = n, y = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (x &gt;= (y + <span class="number">1</span>) * (y + <span class="number">1</span>))</span><br><span class="line">  y++;</span><br></pre></td></tr></table></figure>
-<p>以上时间复杂度 $O(1)$，$O(n^2)$，$O(\log_3n)$，$O(\sqrt{n})$</p>
-<p>语句频度 &amp; 时间复杂度</p>
-<h2 id="3-线性表">3. 线性表</h2>
-<h3 id="3-1-顺序表">3.1 顺序表</h3>
-<p>常用于随机存取，存储密度 $100%$</p>
-<h3 id="3-2-链表">3.2 链表</h3>
-<p>常用于增删改，若单链表指针域、数据域大小一致，则存储密度 $50%$</p>
-<p><strong>单链表</strong></p>
-<p>易混淆概念</p>
-<ul>
-<li>头指针</li>
-<li>头结点</li>
-<li>首元结点</li>
-</ul>
-<p>头结点作用</p>
-<ul>
-<li>数据元素操作相同</li>
-<li>头指针都非空</li>
-</ul>
-<p><strong>循环链表</strong></p>
-<p>设尾指针有时可简化操作，如合并线性表</p>
-<h3 id="3-3-有序表合并">3.3 有序表合并</h3>
-<ul>
-<li>合并后按原序排列
-<ul>
-<li>最好时间复杂度 $O(\min(m,n))$</li>
-<li>最坏时间复杂度 $O(m+n)$</li>
-</ul>
-</li>
-<li>合并后按逆序排列
-<ul>
-<li>最好时间复杂度 $O(m+n)$</li>
-<li>最坏时间复杂度 $O(m+n)$</li>
-</ul>
-</li>
-</ul>
-<p>当 $m,n$ 非常接近或相差很大，$O(m+n)$ 都接近于 $O(\max(m,n))$</p>
-<h2 id="4-栈和队列">4. 栈和队列</h2>
-<h3 id="4-1-栈">4.1 栈</h3>
-<p>后进先出，用于数制转换、括号匹配、表达式求值</p>
-<h3 id="4-2-队列">4.2 队列</h3>
-<p>先进先出，用于舞伴问题</p>
-<p><strong>循环队列</strong></p>
-<p>解决“假溢出”问题</p>
-<p>队列容量 $\tt SIZE$</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Q.front == Q.rear;  <span class="comment">// 队空</span></span><br><span class="line">(Q.rear + <span class="number">1</span>) % SIZE == Q.front; <span class="comment">// 队满</span></span><br><span class="line">n = (Q.rear + SIZE - Q.front) % SIZE; <span class="comment">// 当前元素个数</span></span><br></pre></td></tr></table></figure>
-<h2 id="5-串和数组">5. 串和数组</h2>
-<h3 id="5-1-串">5.1 串</h3>
-<p>数据元素受限的线性表</p>
-<p><strong>模式匹配</strong></p>
-<ul>
-<li><em>BF</em> $O(m*n)$</li>
-<li><em>KMP</em> $O(m+n)$</li>
-</ul>
-<h3 id="5-2-KMP">5.2 KMP</h3>
-<p><strong>next 数组</strong></p>
-<ul>
-<li>$\tt next[1]=0$</li>
-<li>$\tt next[j]<sub>为</sub>P_1\cdots P_{j-1}~最长公共前后缀长度 +1$</li>
-</ul>
-<p><strong>nextval 数组</strong></p>
-<ul>
-<li>$\tt nextval[1]=0$</li>
-<li>$\tt nextval[j]= \begin{cases} \tt next[j], &amp; \tt P_j\ne P_{next[j]} \ \tt nextval[next[j]], &amp; \tt P_j=P_{next[j]} \end{cases}$</li>
-</ul>
-<p><strong>例题</strong></p>
-<p>$$
-\begin{array}{c|ccc}
-\tt j&amp;1&amp;2&amp;3&amp;4&amp;5&amp;6&amp;7 \
-\tt P&amp;a&amp;b&amp;a&amp;b&amp;a&amp;a&amp;a \
-\tt next[j]&amp;0&amp;1&amp;1&amp;2&amp;3&amp;4&amp;2 \
-\tt nextval[j]&amp;0&amp;1&amp;0&amp;1&amp;0&amp;4&amp;2
-\end{array}
-$$</p>
-<h3 id="5-3-数组">5.3 数组</h3>
-<p><strong>存储地址计算</strong></p>
-<ul>
-<li>优先行存储</li>
-<li>优先列存储</li>
-</ul>
-<h2 id="6-树">6. 树</h2>
-<p><strong>术语</strong></p>
-<ul>
-<li>结点的度：其子树个数</li>
-<li>树的度：$\tt Max$ 结点的度</li>
-<li>树的深度（高度）：从 $1$ 开始算</li>
-</ul>
-<p><strong>树的存储结构</strong></p>
-<ul>
-<li>双亲表示法</li>
-<li>孩子表示法</li>
-<li>孩子兄弟法（左孩子，右兄弟）</li>
-</ul>
-<h3 id="6-1-二叉树">6.1 二叉树</h3>
-<p>二叉树是逻辑结构，二叉链表是物理结构</p>
-<p>$\tt n_0=n_2+1$</p>
-<p><strong>完全二叉树</strong></p>
-<p>具有 $\tt n$ 个结点的完全二叉树的深度为 $\tt \lfloor \log_2 n \rfloor + 1$</p>
-<p><strong>二叉树的遍历</strong></p>
-<ul>
-<li>先序遍历</li>
-<li>中序遍历</li>
-<li>后序遍历</li>
-</ul>
-<p>根据（先序&amp;中序）或（中序&amp;后序）序列构建唯一二叉树。<em>P125</em></p>
-<p>波兰式（前缀） &amp; 逆波兰式 <em>P122</em></p>
-<h3 id="6-2-Huffman-树">6.2 Huffman 树</h3>
-<p><strong>术语</strong></p>
-<ul>
-<li>树的路径长度：$\tt ∑$ 结点路径长度</li>
-<li>结点的带权路径长度：结点路径长度 $\tt ×$ 权</li>
-<li>树的带权路径长度 <em>WPL</em>：$\tt ∑$ 叶子的带权路径长度</li>
-<li>Huffman 树：<em>WPL</em> 最小的二叉树</li>
-</ul>
-<p><strong>Huffman 树的构造</strong></p>
-<ol>
-<li>选两棵权值最小的树合成，权值记为 $a,b$</li>
-<li>合成的二叉树根结点权值为 $a+b$</li>
-<li>重复直到仅剩一棵树</li>
-</ol>
-<h3 id="6-3-Huffman-编码">6.3 Huffman 编码</h3>
-<p>最优前缀码</p>
-<p><strong>Huffman 编码的构造</strong></p>
-<ol>
-<li>标记 Huffman 树的左分支为 $0$，右分支为 $1$</li>
-<li>根结点到叶子节点路径上的 $01$ 序列，就是该结点的最优前缀码</li>
-</ol>
-<h2 id="7-图">7. 图</h2>
-<p><strong>术语</strong></p>
-<ul>
-<li>度、入度、出度：$有向图的度=出度+入度$</li>
-<li>简单路径、简单回路</li>
-<li>网：带权的图</li>
-<li>连通图、连通分量：无向图</li>
-<li>强连通图、强连通分量：有向图</li>
-</ul>
-<h3 id="7-1-图的存储">7.1 图的存储</h3>
-<p>邻接矩阵表示唯一，邻接表表示不唯一</p>
-<p><strong>邻接矩阵</strong></p>
-<ul>
-<li>无权图由 $0,1$ 构成</li>
-<li>网由 $w,\infty$ 构成</li>
-</ul>
-<p><strong>邻接表</strong></p>
-<p>由顶点顺序表、邻接点链表构成</p>
-<p><strong>优缺点的对比</strong></p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th style="text-align:center">邻接矩阵</th>
-<th style="text-align:center">邻接表</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>判断边是否存在</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td>计算顶点的度</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td>增删顶点</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td>统计边数</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">✔</td>
-</tr>
-<tr>
-<td>空间复杂度</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">✔</td>
-</tr>
-</tbody>
-</table>
-<h3 id="7-2-最小生成树">7.2 最小生成树</h3>
-<p><strong>Prim</strong></p>
-<ol>
-<li>选一个点 $v$ 加入 $U$</li>
-<li>多选一个点 $v \notin U$ 加入，使增加的权值最小</li>
-<li>重复</li>
-</ol>
-<p><strong>Kruskal</strong></p>
-<ol>
-<li>将边按权值排序</li>
-<li>选取最短的边
-<ul>
-<li>形成回路，丢弃</li>
-<li>不形成回路，加入</li>
-</ul>
-</li>
-<li>重复</li>
-</ol>
-<h3 id="7-3-拓扑排序">7.3 拓扑排序</h3>
-<p>用于有向无环图，是<strong>关键路径算法</strong>的基础</p>
-<p><strong>AOV-网构造拓扑序列</strong></p>
-<ol>
-<li>选入度为 $0$ 的顶点，并输出</li>
-<li>删除该顶点及其出边</li>
-<li>重复，若输出顶点少于总顶点，则存在环</li>
-</ol>
-<h3 id="7-4-图的算法比较">7.4 图的算法比较</h3>
-<p><strong>DFS &amp; BFS</strong></p>
-<ul>
-<li>邻接矩阵 $O(n^2)$</li>
-<li>邻接表 $O(n+e)$</li>
-</ul>
-<p><strong>最小生成树 MST</strong></p>
-<ul>
-<li><em>Prim</em> $O(n^2)$</li>
-<li><em>Kruskal</em> $O(e\log_2 e)$</li>
-</ul>
-<p><strong>最短路</strong></p>
-<ul>
-<li><em>Dijkstra</em> $O(n^2)$</li>
-<li><em>Floyd</em> $O(n^3)$</li>
-</ul>
-<h2 id="8-查找">8. 查找</h2>
-<h3 id="8-1-线性表">8.1 线性表</h3>
-<p><strong>查找算法比较</strong></p>
-<ul>
-<li>顺序查找 $O(n)$</li>
-<li>折半查找 $O(\log_2n)$</li>
-<li>分块查找 $O(\sqrt{n})$</li>
-</ul>
-<p><strong>判定树</strong></p>
-<p>查找成功至少 $\tt \lfloor \log_2n \rfloor$ 次</p>
-<h3 id="8-2-树表">8.2 树表</h3>
-<p><strong>二叉排序树</strong></p>
-<ul>
-<li>左子树都小于根，右子树都大于根</li>
-<li>中序遍历可得到单增序列</li>
-<li>无序序列生成二叉查找树</li>
-</ul>
-<h3 id="8-3-散列表">8.3 散列表</h3>
-<p><strong>术语</strong></p>
-<ul>
-<li>散列表长 $m$</li>
-<li>散列函数 $H(key)$</li>
-<li>冲突 $a≠b, H(a)=H(b)$，其中 $a$ 与 $b$ 为同义词</li>
-</ul>
-<p><strong>冲突的处理</strong></p>
-<p>线性探测会产生<code>“二次聚集”</code></p>
-<ul>
-<li>开放地址法 $H_i=(H(key)+d_i)%m$
-<ul>
-<li>线性探测法 $d_i=1,2,3,\cdots,m-1$</li>
-<li>二次探测法 $d_i=1<sup>2,-1</sup>2,2<sup>2,-2</sup>2,\cdots,+k<sup>2,-k</sup>2(k\le m/2)$</li>
-<li>伪随机探测法</li>
-</ul>
-</li>
-<li>链地址法 <em>P224</em></li>
-</ul>
-<p><strong>散列表的平均查找长度 $\tt ASL$</strong></p>
-<ul>
-<li>查找成功 $\tt ASL_{succ}$：$\tt\sum p_{succ}×cnt_i$</li>
-<li>查找失败 $\tt ASL_{unsucc}$：$\tt\sum p_{unsucc}×cnt_i$</li>
-</ul>
-<h2 id="9-排序">9. 排序</h2>
-<ul>
-<li>插入排序
-<ul>
-<li>直接插入排序</li>
-<li>折半插入排序</li>
-<li>希尔排序</li>
-</ul>
-</li>
-<li>交换排序
-<ul>
-<li>冒泡排序</li>
-<li>快速排序</li>
-</ul>
-</li>
-<li>选择排序
-<ul>
-<li>简单选择排序</li>
-<li>堆排序</li>
-</ul>
-</li>
-<li>归并排序</li>
-<li>基数排序</li>
-<li>外部排序</li>
-</ul>
-<h3 id="9-1-插入排序">9.1 插入排序</h3>
-<p>当“记录个数较少”、“序列基本有序”时，<code>直接插入排序</code>效率较高</p>
-<ul>
-<li>直接插入排序：从后向前查找，插入到合适位置</li>
-<li>折半插入排序：折半查找，插入到合适位置</li>
-<li>希尔排序：分组插入，从“减少记录个数”、“序列基本有序”改进直接插入</li>
-</ul>
-<h3 id="9-2-交换排序">9.2 交换排序</h3>
-<p><strong>冒泡排序</strong></p>
-<ol>
-<li>两两比较相邻的记录，逆序则交换位置</li>
-<li>若一趟排序没有交换过记录，则完成排序</li>
-</ol>
-<p><strong>快速排序</strong></p>
-<ol>
-<li>每趟排序从右边开始比较</li>
-<li>逆序或相等则交换位置，之后换另一边继续</li>
-<li>若 $\tt low&lt;high$ 则继续，否则进行下一趟排序</li>
-<li>若待排序列中只有一个记录，则完成排序</li>
-</ol>
-<blockquote>
-<p>对序列 $\tt 49<sub>38</sub>65<sub>97</sub>76<sub>13</sub>27~\overline{49}$ 排序，结果如下：</p>
-<p>第 $1$ 趟：$\tt {27<sub>38</sub>13}<sub>49</sub>{76<sub>97</sub>65~\overline{49}}$</p>
-<p>第 $2$ 趟：$\tt {13}<sub>27</sub>{38}<sub>49</sub>{76<sub>97</sub>65~\overline{49}}$</p>
-<p>第 $3$ 趟：$\tt 13<sub>27</sub>38<sub>49</sub>{\overline{49}<sub>65}</sub>76~{97}$</p>
-<p>第 $4$ 趟：$\tt 13<sub>27</sub>38<sub>49</sub>\overline{49}<sub>{65}</sub>76~97$</p>
-</blockquote>
-<h3 id="9-3-选择排序">9.3 选择排序</h3>
-<p><strong>堆排序</strong></p>
-<ol>
-<li>建初堆：从最后一个非终端结点开始，堆调整使其是大根堆</li>
-<li>交换：堆顶元素和最后一个结点交换，形成新堆，调整成大根堆</li>
-<li>堆调整：该结点之后的结点必满足大根堆</li>
-</ol>
-<h3 id="9-4-归并排序">9.4 归并排序</h3>
-<p><strong>2-路归并</strong></p>
-<blockquote>
-<p>对序列 $\tt [49]<sub>[38]</sub>[65]<sub>[97]</sub>[76]<sub>[13]</sub>[27]$ 排序，结果如下：</p>
-<p>第 $1$ 趟：$\tt [38<sub>49]</sub>[65<sub>97]</sub>[13<sub>76]</sub>[27]$</p>
-<p>第 $2$ 趟：$\tt [38<sub>49</sub>65<sub>97]</sub>[13<sub>27</sub>76]$</p>
-<p>第 $3$ 趟：$\tt [13<sub>27</sub>38<sub>49</sub>65<sub>76</sub>97]$</p>
-</blockquote>
-<h3 id="9-5-分配类排序">9.5 分配类排序</h3>
-<p>不是<code>关键字比较</code>，而是通过<code>“分配”与“收集”</code>实现排序</p>
-<h3 id="9-6-排序性能比较">9.6 排序性能比较</h3>
-<p><strong>排序选取</strong></p>
-<ul>
-<li>记录较少
-<ul>
-<li>基本有序：直接插入、冒泡</li>
-</ul>
-</li>
-<li>记录较多
-<ul>
-<li>随机：快排</li>
-<li>基本有序但不稳定：堆排序</li>
-<li>基本有序且稳定：归并</li>
-</ul>
-</li>
-</ul>
-<p><strong>不稳定排序</strong></p>
-<p>希尔排序、快速排序、堆排序</p>
-<p><strong>时间复杂度较小</strong></p>
-<ul>
-<li>快排 $O(n\log_2n)$</li>
-<li>堆排序 $O(n\log_2n)$</li>
-<li>归并 $O(n\log_2n)$</li>
-<li>希尔 $O(n^{1.3})$</li>
-<li>其他 $O(n^2)$</li>
-</ul>
-<p><strong>空间复杂度较大</strong></p>
-<ul>
-<li>归并 $O(n)$</li>
-<li>快排 $O(\log_2n)$</li>
-<li>其他 $O(1)$</li>
-</ul>
-<h2 id="10-题目">10. 题目</h2>
-<h3 id="10-1-选填">10.1 选填</h3>
-<p><strong>C语言</strong></p>
-<p>函数内定义的是<code>局部变量</code>，只在<code>定义它的函数范围内</code>有效</p>
-<p>结构化程序设计中，三种基本结构是<code>顺序结构、选择结构、循环结构</code></p>
-<p>C语言以<code>函数</code>为程序的基本单位，变量必须<code>先</code>定义<code>后</code>使用</p>
-<p>C语言源程序要经过<code>预处理、编译、汇编、链接</code>才能执行</p>
-<p>C语言基本数据类型 <code>int, char, float, double, short, long</code></p>
-<p>按照变量的作用域可将变量划分为<code>全局变量、局部变量</code></p>
-<p>C语言程序总是从<code>主函数</code>开始执行</p>
-<p><strong>数据结构</strong></p>
-<p>衡量算法的两个主要指标：<code>时间复杂度、空间复杂度</code></p>
-<p>树的存储结构有三种表示方法：<code>双亲表示法、孩子表示法、孩子兄弟表示法</code></p>
-<p>图进行广搜常用<code>队列</code>实现算法，进行深搜常用<code>栈</code>实现算法</p>
-<p>一个递归算法必须包括：<code>终止条件、递归部分</code></p>
-<p>栈和队列都是<code>限制存储点的线性结构</code></p>
-<p>为便于确定顶点的入度，可以建立<code>逆邻接表</code></p>
-<h3 id="10-2-编程题">10.2 编程题</h3>
-<p><strong>1. 有序表的合并</strong></p>
-<p>将两个递增的有序链表 La 和 Lb 合并为一个递增的有序链表 Lc。不开辟新的存储空间，不允许有重复的数据。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MergeList</span><span class="params">(LinkList &amp;La, LinkList &amp;Lb, LinkList &amp;Lc)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  pa = La-&gt;next;</span><br><span class="line">  pb = Lb-&gt;next;</span><br><span class="line">  Lc = pc = La;</span><br><span class="line">  <span class="keyword">while</span> (pa &amp;&amp; pb)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span> (pa-&gt;data &lt; pb-&gt;data)</span><br><span class="line">    &#123;</span><br><span class="line">      pc-&gt;next = pa;</span><br><span class="line">      pc = pa;</span><br><span class="line">      pa = pa-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (pa-&gt;data &gt; pb-&gt;data)</span><br><span class="line">    &#123;</span><br><span class="line">      pc-&gt;next = pb;</span><br><span class="line">      pc = pb;</span><br><span class="line">      pb = pb-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">      pc-&gt;next - pa;</span><br><span class="line">      pc = pa;</span><br><span class="line">      pa = pa-&gt;next;</span><br><span class="line">      q = pb-&gt;next;</span><br><span class="line">      <span class="keyword">delete</span> pb;</span><br><span class="line">      pb = q;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  pc-&gt;next = pa ? pa : pb;</span><br><span class="line">  <span class="keyword">delete</span> Lb;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>将两个非递减的有序链表 La 和 Lb 合并为一个非递增的有序链表 Lc。不开辟新的存储空间，允许有重复的数据。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MergeList</span><span class="params">(LinkList &amp;La, LinkList &amp;Lb, LinkList &amp;Lc)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  pa = La-&gt;next;</span><br><span class="line">  pb = Lb-&gt;next;</span><br><span class="line">  Lc = pc = La;</span><br><span class="line">  Lc-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">  <span class="keyword">while</span> (pa || pb)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span> (!pa)</span><br><span class="line">      q = pb, pb = pb-&gt;next;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (!pb)</span><br><span class="line">      q = pa, pa = pa-&gt;next;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (pa-&gt;data &lt;= pb-&gt;data)</span><br><span class="line">      q = pa, pa - pa-&gt;next;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      q = pb, pb = pb-&gt;next;</span><br><span class="line">    q-&gt;next = Lc-&gt;next;</span><br><span class="line">    Lc-&gt;next = q;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">delete</span> Lb;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>2. 杂</strong></p>
-<p>将链表逆转，不开辟新的存储空间。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Inverse</span><span class="params">(LinkList &amp;L)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  p = L-&gt;next;</span><br><span class="line">  L-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">  <span class="keyword">while</span> (p != <span class="literal">NULL</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    q = p-&gt;next;</span><br><span class="line">    p-&gt;next = L-&gt;next;</span><br><span class="line">    L-&gt;next = p;</span><br><span class="line">    p = q;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>3. 递归</strong></p>
-<p>已知 <em>f</em> 为单链表的表头指针，链表中仅存储整型数据，用递归算法实现
-（1）求链表中的最大整数
-（2）求链表的结点个数
-（3）求所有整数的平均值</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">GetMax</span><span class="params">(LinkList p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!p-&gt;next)</span><br><span class="line">    <span class="keyword">return</span> p-&gt;data;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">int</span> max = GetMax(p-&gt;next);</span><br><span class="line">    <span class="keyword">return</span> p-&gt;data &gt;= max ? p-&gt;data : max;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">GetLength</span><span class="params">(LinkList p)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!p-&gt;next)</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    <span class="keyword">return</span> GetLength(p-&gt;next) + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">GetAverage</span><span class="params">(LinkList p, <span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (!p-&gt;next)</span><br><span class="line">    <span class="keyword">return</span> p-&gt;data;</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">double</span> ave = GetAverage(p-&gt;next, n - <span class="number">1</span>);</span><br><span class="line">    <span class="keyword">return</span> (ave * (n - <span class="number">1</span>) + p-&gt;data) / n;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>4. 二叉树</strong></p>
-<p>以二叉链表作为二叉树的存储结构，编写算法</p>
-<p>（1）统计二叉树的叶子结点个数
-（2）判别两棵树是否相等
-（3）交换二叉树每个结点的左孩子和右孩子
-（4）设计二叉树的双序遍历算法
-（5）计算二叉树的最大宽度
-（6）用按层次顺序遍历二叉树的方法，统计树中具有度为1的结点数目
-（7）求任意二叉树中第一条最长的路径长度，并输出此路径上各结点的值
-（8）输出二叉树中从每个叶子结点到根结点的路径</p>
+  <p class='p right small'>谢希仁 编著</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/yanglbme/v2ex-action/actions"><img src="https://github.com/yanglbme/v2ex-action/workflows/Lint/badge.svg" class="lazyload" data-srcset="https://github.com/yanglbme/v2ex-action/workflows/Lint/badge.svg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="lint status"></a> <a target="_blank" rel="noopener" href="https://github.com/yanglbme/v2ex-action/actions"><img src="https://github.com/yanglbme/v2ex-action/workflows/V2ex/badge.svg" class="lazyload" data-srcset="https://github.com/yanglbme/v2ex-action/workflows/V2ex/badge.svg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="v2ex status"></a> <a href="../../releases"><img src="https://img.shields.io/github/v/release/yanglbme/v2ex-action.svg" class="lazyload" data-srcset="https://img.shields.io/github/v/release/yanglbme/v2ex-action.svg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="release"></a> <a href="./LICENSE"><img src="https://badgen.net/github/license/yanglbme/v2ex-action" class="lazyload" data-srcset="https://badgen.net/github/license/yanglbme/v2ex-action" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="license"></a> <a href="../../pulls"><img src="https://badgen.net/badge/PRs/welcome/green" class="lazyload" data-srcset="https://badgen.net/badge/PRs/welcome/green" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="PRs Welcome"></a></p>
 
   
   
@@ -1249,7 +782,7 @@ $$</p>
               
             
               
-                <p>本文永久链接是：<a href=http://example.com/posts/20200922/3ab98f4756c1/>http://example.com/posts/20200922/3ab98f4756c1/</a></p>
+                <p>本文永久链接是：<a href=http://example.com/posts/20210306/b35cb32b46a9/>http://example.com/posts/20210306/b35cb32b46a9/</a></p>
               
             
           </blockquote>
@@ -1266,10 +799,10 @@ $$</p>
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-18T22:14:36+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-06T00:20:57+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年3月18日</p>
+    <p>更新于：2021年3月6日</p>
   </a>
 </div>
 
@@ -1277,9 +810,6 @@ $$</p>
       
         
           
-  
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%A4%A7%E5%AD%A6/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>大学</p></a></div>
-
 
         
       
@@ -1291,7 +821,7 @@ $$</p>
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20200922/3ab98f4756c1/&title=数据结构 - Cream & Forrest&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/posts/20210306/b35cb32b46a9/&title=计算机网络 (第7版) - Cream & Forrest&summary="
           
           >
           
@@ -1303,7 +833,7 @@ $$</p>
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20200922/3ab98f4756c1/&title=数据结构 - Cream & Forrest&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/posts/20210306/b35cb32b46a9/&title=计算机网络 (第7版) - Cream & Forrest&summary="
           
           >
           
@@ -1315,7 +845,7 @@ $$</p>
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20200922/3ab98f4756c1/&title=数据结构 - Cream & Forrest&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/posts/20210306/b35cb32b46a9/&title=计算机网络 (第7版) - Cream & Forrest&summary="
           
           >
           
@@ -1346,25 +876,35 @@ $$</p>
     <div class="prev-next">
       
       
-        <a class='prev' href='/posts/20201026/cae624b298f8/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>概率论</p>
-          <p class='content'>1. 事件与概率
-1.1 概率
-容斥原理 $P(A \cup B)=P(A)+P(B)-P(AB)$
-古典概型 $\displaystyle P_n^m=\frac{n!}{(n-m)!}$，$...</p>
+        <a class='prev' href='/posts/20210307/6d1cb6fca681/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Blog 加密</p>
+          <p class='content'>AES 加密
+密钥必须是 16 位
+https://cdn.jsdelivr.net/npm/crypto-js@4.0.0/crypto-js.js
+</p>
         </a>
       
       
       
-        <a class='next' href='/posts/20200915/0fb879921c2f/'>
-          <p class='title'>概率论<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>1. 行列式
+        <a class='next' href='/posts/20210304/31b203424733/'>
+          <p class='title'>本科毕业设计<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>1. Core
+1.1 PCA
+无监督学习
+降维
+变异性
+LDA 监督
+1.2 SVM
+1.3 Logistic
+x. 系统结构
+系统角色
 
-行列式是一个数，它是不同行不同列元素乘积的代数和
+学生
+教秘
+管理员
 
-1.1 n 阶行列式
-规定 $\tau(j_1j_2\cdots j_n)$ 为逆序数
-$$|A|=\sum_{j_1j_2\...</p>
+2. Client
+2.1 用...</p>
         </a>
       
     </div>
@@ -1380,59 +920,6 @@ $$|A|=\sum_{j_1j_2\...</p>
 
 
 
-  <script>
-  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.0/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    // 文章章节标题不能为 “MathJax” ，否则会报错。
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-
 
 </div>
 <aside class='l_side'>
@@ -1442,20 +929,6 @@ $$|A|=\sum_{j_1j_2\...</p>
     
 
 
-
-  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
-    
-  <header>
-    
-      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-C%E8%AF%AD%E8%A8%80"><span class="toc-text">1. C语言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E6%8C%87%E9%92%88-%E5%BC%95%E7%94%A8"><span class="toc-text">1.1 指针 &amp; 引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-text">1.2 运算符优先级</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BB%AA%E8%AE%BA"><span class="toc-text">2. 绪论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">2.1 数据结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E7%AE%97%E6%B3%95"><span class="toc-text">2.2 算法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="toc-text">3. 线性表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E9%A1%BA%E5%BA%8F%E8%A1%A8"><span class="toc-text">3.1 顺序表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E9%93%BE%E8%A1%A8"><span class="toc-text">3.2 链表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E6%9C%89%E5%BA%8F%E8%A1%A8%E5%90%88%E5%B9%B6"><span class="toc-text">3.3 有序表合并</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97"><span class="toc-text">4. 栈和队列</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E6%A0%88"><span class="toc-text">4.1 栈</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E9%98%9F%E5%88%97"><span class="toc-text">4.2 队列</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E4%B8%B2%E5%92%8C%E6%95%B0%E7%BB%84"><span class="toc-text">5. 串和数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E4%B8%B2"><span class="toc-text">5.1 串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-KMP"><span class="toc-text">5.2 KMP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E6%95%B0%E7%BB%84"><span class="toc-text">5.3 数组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%A0%91"><span class="toc-text">6. 树</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">6.1 二叉树</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-Huffman-%E6%A0%91"><span class="toc-text">6.2 Huffman 树</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-Huffman-%E7%BC%96%E7%A0%81"><span class="toc-text">6.3 Huffman 编码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E5%9B%BE"><span class="toc-text">7. 图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-%E5%9B%BE%E7%9A%84%E5%AD%98%E5%82%A8"><span class="toc-text">7.1 图的存储</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91"><span class="toc-text">7.2 最小生成树</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F"><span class="toc-text">7.3 拓扑排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4-%E5%9B%BE%E7%9A%84%E7%AE%97%E6%B3%95%E6%AF%94%E8%BE%83"><span class="toc-text">7.4 图的算法比较</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%9F%A5%E6%89%BE"><span class="toc-text">8. 查找</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="toc-text">8.1 线性表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2-%E6%A0%91%E8%A1%A8"><span class="toc-text">8.2 树表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-3-%E6%95%A3%E5%88%97%E8%A1%A8"><span class="toc-text">8.3 散列表</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E6%8E%92%E5%BA%8F"><span class="toc-text">9. 排序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#9-1-%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="toc-text">9.1 插入排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-2-%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F"><span class="toc-text">9.2 交换排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-3-%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F"><span class="toc-text">9.3 选择排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-4-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="toc-text">9.4 归并排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-5-%E5%88%86%E9%85%8D%E7%B1%BB%E6%8E%92%E5%BA%8F"><span class="toc-text">9.5 分配类排序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-6-%E6%8E%92%E5%BA%8F%E6%80%A7%E8%83%BD%E6%AF%94%E8%BE%83"><span class="toc-text">9.6 排序性能比较</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E9%A2%98%E7%9B%AE"><span class="toc-text">10. 题目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#10-1-%E9%80%89%E5%A1%AB"><span class="toc-text">10.1 选填</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-2-%E7%BC%96%E7%A8%8B%E9%A2%98"><span class="toc-text">10.2 编程题</span></a></li></ol></li></ol>
-    </div>
-  </section>
 
 
   
@@ -1472,7 +945,7 @@ $$|A|=\sum_{j_1j_2\...</p>
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="数据结构";
+  pdata.postTitle="计算机网络 (第7版)";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
