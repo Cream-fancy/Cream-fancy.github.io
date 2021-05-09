@@ -799,6 +799,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>.gitignore 忽略之前提交的文件</strong></p>
 <p>之前不小心提交了 .idea 文件夹，但是仅仅在 .gitignore 文件中添加 .idea 之后，并不会删除仓库中的文件，具体操作如下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 清除本地缓存（改变成未 track 状态）</span></span><br><span class="line"><span class="comment"># xxx表示不想版本控制的文件，例如 .idea</span></span><br><span class="line"><span class="comment"># .gitignore中的忽略规则应该与之相对应</span></span><br><span class="line">git rm -r --cached xxx</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加除了忽略文件外的所有文件</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;delete .idea&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 强制推送</span></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>比如</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git rm -r --cached *.db</span><br><span class="line"><span class="comment"># rm &#x27;static/admin.db&#x27;</span></span><br><span class="line"><span class="comment"># rm &#x27;static/class.db&#x27;</span></span><br><span class="line"><span class="comment"># rm &#x27;static/oprateRecord.db&#x27;</span></span><br><span class="line"><span class="comment"># rm &#x27;static/student.db&#x27;</span></span><br><span class="line"><span class="comment"># rm &#x27;static/subject.db&#x27;</span></span><br><span class="line"><span class="comment"># rm &#x27;static/typeTable.db&#x27;</span></span><br><span class="line"><span class="comment"># rm &#x27;static/商品表.db&#x27;</span></span><br><span class="line"><span class="comment"># rm &#x27;static/学生表.db&#x27;</span></span><br><span class="line"><span class="comment"># rm &#x27;static/用户表.db&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="分支">分支</h2>
+<p>邀请协作者</p>
+<ol>
+<li>
+<p>查看当前分支 （git branch）</p>
+</li>
+<li>
+<p>创建分支 （git branch 分支名）</p>
+</li>
+</ol>
+<p>3.切换分支（git checkout 分支名）</p>
+<p>4.分支上的常规操作</p>
+<p>5.分支的合并 （git checkout master + git merge 分支名）</p>
+<p>6.分支的删除（git branch -d 分支名）</p>
+
   
   
     
@@ -954,7 +971,7 @@ https://api.weibo.com/2/emotions.json?source=1362404091
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A5%E9%97%A8"><span class="toc-text">入门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-text">基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%88%B0-GitHub"><span class="toc-text">推送新项目到 GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A5%E9%97%A8"><span class="toc-text">入门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-text">基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%88%B0-GitHub"><span class="toc-text">推送新项目到 GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%94%AF"><span class="toc-text">分支</span></a></li></ol>
     </div>
   </section>
 
