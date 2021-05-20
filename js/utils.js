@@ -32,7 +32,6 @@ export default {
         .catch(error => reject(error))
     })
   },
-
   markdownPreview(reqText, token) {
     return new Promise((resolve, reject) => {
       fetch('https://api.github.com/markdown', {
@@ -46,5 +45,5 @@ export default {
       }).then(response => resolve(response.text()))
     })
   },
-  generateToken: key => CryptoJS.AES.decrypt(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Hex.parse('d761690d21d9e1aee509d7aa1f0697ead8d9850bed741be45fc2ffc60ec647c1a7683e2642872a8fa18ffb6bde1d7580')), CryptoJS.enc.Utf8.parse(key), { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }).toString(CryptoJS.enc.Utf8)
+  generateToken: key => CryptoJS.AES.decrypt(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Hex.parse('a603b5e35482ad86a8e22c0b7410f0ab76c53cfaa605855c6a5e0feef9fdeb20e10103b224d23d2d412fad5f74a90311')), CryptoJS.enc.Utf8.parse(key), { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }).toString(CryptoJS.enc.Utf8)
 }

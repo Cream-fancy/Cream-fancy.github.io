@@ -4,7 +4,8 @@ export default {
       const auth = JSON.parse(localStorage.getItem('auth'));
       if (auth) { Cream.auth = auth }
     } catch (e) { }
-    if (Cream && Cream.auth && Cream.auth.username !== '' && Cream.auth.token !== '' && CryptoJS.MD5(Cream.auth.token).toString() === '64e20078dc036be1685f955b32a1a14c') {
+    if (Cream && Cream.auth && Cream.auth.username !== '' && Cream.auth.token !== '' && CryptoJS.MD5(Cream.auth.token).toString() === '92b49009bb62aaba0c9b61019437f527') {
+      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
       this.success();
     } else {
       this.error();
