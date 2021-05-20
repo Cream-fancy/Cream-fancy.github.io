@@ -4,8 +4,8 @@ export default {
       const auth = JSON.parse(localStorage.getItem('auth'));
       if (auth) { Cream.auth = auth }
     } catch (e) { }
-    if (Cream && Cream.auth && Cream.auth.username !== '' && Cream.auth.token !== '' && CryptoJS.MD5(Cream.auth.token).toString() === '92b49009bb62aaba0c9b61019437f527') {
-      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
+    console.log(Cream);
+    if (Cream && Cream.auth && Cream.auth.username !== '' && Cream.auth.token !== '' && CryptoJS.MD5(Cream.auth.token).toString() === '6aba0fc69dc17b1e924db551851d48ca') {
       this.success();
     } else {
       this.error();
@@ -36,6 +36,7 @@ export default {
         $('#auth-login').on('click', ev => {
           Cream.auth.username = $('#auth-username').val();
           Cream.auth.token = Cream.utils.generateToken($('#auth-password').val());
+          localStorage.clear();/** 清空本地存储 */
           this.test();
         });
         break;

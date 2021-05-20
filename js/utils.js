@@ -45,5 +45,5 @@ export default {
       }).then(response => resolve(response.text()))
     })
   },
-  generateToken: key => CryptoJS.AES.decrypt(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Hex.parse('a603b5e35482ad86a8e22c0b7410f0ab76c53cfaa605855c6a5e0feef9fdeb20e10103b224d23d2d412fad5f74a90311')), CryptoJS.enc.Utf8.parse(key), { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }).toString(CryptoJS.enc.Utf8)
+  generateToken: key => CryptoJS.AES.decrypt(CryptoJS.enc.Base64.stringify(CryptoJS.enc.Hex.parse('9509d8f55f0aefd4e4ea3c79f9990f08325d4f71483ad96d02411791f39e95acd640cdbae6a907572a0b719d170c08c2')), CryptoJS.enc.Utf8.parse(key), { mode: CryptoJS.mode.ECB, padding: CryptoJS.pad.Pkcs7 }).toString(CryptoJS.enc.Utf8)
 }
