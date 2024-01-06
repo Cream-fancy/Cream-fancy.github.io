@@ -1,0 +1,42 @@
+- name: 主页
+  icon: fad fa-home-heart
+  url: /
+- name: 文档
+  icon: fad fa-cube
+  rows:
+  - name: 分类
+    icon: fad fa-folder-open
+    url: categories/
+  - name: 标签
+    icon: fad fa-tags
+    url: tags/
+  - name: 归档
+    icon: fad fa-archive
+    url: archives/
+- name: 情侣
+  icon: fad fa-heart
+  rows:
+  - name: 日常
+    icon: fad fa-feather-alt
+    url: life/
+  - name: 许愿
+    icon: fad fa-glass-cheers
+    url: todo-with-you/
+  - name: 说说
+    icon: fad fa-comment-dots
+    url: talk/
+- name: 休闲
+  icon: fad fa-coffee
+  rows:
+  - name: 音乐
+    icon: fad fa-music
+    url: music/
+  - name: 相册
+    icon: fad fa-images
+    url: gallery/
+  - name: 游戏
+    icon: fad fa-gamepad-alt
+    url: game/
+- name: 关于
+  icon: fad fa-info-circle
+  url: about/
